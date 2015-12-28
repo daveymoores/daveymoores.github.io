@@ -1,0 +1,43 @@
+//slide 0 elements
+
+.wipes__section--first {
+
+   .item {
+
+      &__rooster {
+         //width: 575px;
+         @include proportionalWidthReduce(575px);
+         right: 0px;
+         bottom: 0px;
+
+         display: block!important;
+
+         @media screen and (max-width: $small-breakpoint) {
+            width: 105%;
+            display: none;
+            right: -190px;
+         }
+
+         img {
+            -webkit-transition: 1.4s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+            -moz-transition: 1.4s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+            -o-transition: 1.4s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+            transition: 1.4s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+         }
+
+         &.rotate {
+
+            img {
+               -webkit-transform: rotate(-75deg);
+                -moz-transform: rotate(-75deg);
+                -o-transform: rotate(-75deg);
+                -ms-transform: rotate(-75deg);
+                transform: rotate(-75deg);
+            }
+
+         }
+      }
+
+   }
+
+}

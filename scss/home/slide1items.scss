@@ -1,0 +1,53 @@
+//slide-1 elements
+
+
+
+
+.wipes__section--second {
+
+   .item {
+
+      &__coffeecup {
+         //width: 540px;
+         @include proportionalWidthReduce(540px);
+         right: -125px;
+         bottom: 140px;
+      }
+
+      &__headphones {
+         //width: 401px;
+         @include proportionalWidthReduce(401px);
+         bottom: 20%;
+         right: -150px;
+      }
+
+      &__lego {
+         //width: 165px;
+         @include proportionalWidthReduce(165px);
+         right: 0;
+         bottom: 80px;
+      }
+
+      &__lego2 {
+         right: 115px;
+         //width: 140px;
+         @include proportionalWidthReduce(140px);
+      }
+
+      &__notebook {
+         left: -180px;
+         bottom: 100px;
+         //width: 581px;
+         @include proportionalWidthReduce(581px);
+      }
+
+      &__postit {
+         right: 20px;
+         top: 60px;
+         //width: 245px;
+         @include proportionalWidthReduce(245px);
+      }
+
+   }
+
+}

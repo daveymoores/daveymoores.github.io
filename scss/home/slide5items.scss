@@ -1,0 +1,136 @@
+//slide5items
+
+#apptext {
+   margin-top: 40px;
+   top: 19vh;
+   font-weight: bold;
+   font-size: 0.8rem;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+}
+
+.quoteboxes {
+
+   margin-top: 270px;
+   display: none;
+
+   @media screen and (max-width: $i5-breakpoint) {
+      margin-top: 200px;
+   }
+
+
+   @media screen and (max-width: $small-breakpoint) {
+
+      .medium-4 {
+         display: none;
+
+         &:first-child {
+            display: block;
+
+            p {
+               padding: 0px;
+
+               @media screen and (max-width: $i5-breakpoint) {
+                  font-size: 0.8rem!important;
+                  margin-bottom: 0px!important;
+               }
+            }
+         }
+      }
+
+   }
+
+   &--name {
+      text-align: left!important;
+      position: relative!important;
+      margin-left: 45%;
+      top: 35px!important;
+
+      @media screen and (max-width: $small-breakpoint) {
+         display: none;
+
+         &.first {
+            display: block;
+            padding: 0px;
+         }
+      }
+
+      &:before {
+         display: block;
+         height: 60px;
+         width: 60px;
+         content: "";
+         margin-left: -45px;
+         background: transparent url(../img/homepage/quote.svg) top left no-repeat;
+         position: absolute;
+      }
+
+      i {
+         font-size: 0.8rem;
+         display: block;
+      }
+   }
+
+   &__container {
+      min-height: 200px;
+
+      @media screen and (max-width: $small-breakpoint) {
+         min-height: 140px;
+         padding: 15px;
+      }
+
+      width: 100%;
+      background-color: palette(white);
+      border-radius: 10px;
+      -moz-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+      -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+      box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+      padding: 25px;
+
+      p {
+         font-size: 0.9rem!important;
+         color: palette(steel)!important;
+         text-align: center!important;
+         position: relative;
+         top: auto;
+         font-weight: normal!important;
+         margin-bottom: 0px!important;
+
+         @media screen and (max-width: $small-breakpoint) {
+             top: 0px!important;
+         }
+      }
+
+      span {
+         position: absolute;
+         bottom: -20px;
+          width: 63px;
+          left: 36%;
+      }
+   }
+
+}
+
+
+.currencies {
+   width: 160px;
+   list-style: none;
+   margin: auto;
+   display: block;
+   position: relative;
+   margin-top: 105px;
+
+   li {
+      width: 30px;
+      margin: 5px;
+      float: left;
+   }
+
+}
+
+
+.imageActive {
+   .quoteboxes {
+      display: block;
+   }
+}

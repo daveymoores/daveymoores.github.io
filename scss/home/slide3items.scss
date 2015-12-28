@@ -1,0 +1,31 @@
+//slide 3
+
+
+.wipes__section--fourth {
+
+   .item {
+
+      &__coins {
+         //width: 216px;
+         @include proportionalWidthReduce(216px);
+         right: -125px;
+         bottom: 140px;
+      }
+
+      &__goal {
+         //width: 323px;
+         @include proportionalWidthReduce(323px);
+         bottom: 50%;
+      }
+
+      &__keylist {
+         //width: 278px;
+         @include proportionalWidthReduce(278px);
+         right: 0;
+         bottom: 150px;
+      }
+
+
+   }
+
+}

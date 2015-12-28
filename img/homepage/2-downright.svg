@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="86px" height="220px" viewBox="0 0 86 220" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
+    <title>2-downright</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="2.0-" sketch:type="MSArtboardGroup" transform="translate(-1354.000000, -804.000000)">
+            <g id="Backgrounds" sketch:type="MSLayerGroup">
+                <g id="2-downright" transform="translate(1437.324274, 829.043574) rotate(-105.000000) translate(-1437.324274, -829.043574) translate(1246.824274, 697.543574)" sketch:type="MSShapeGroup">
+                    <path d="M0.407673436,83.8433537 L22.6661054,0.773738598 L174.274313,130.430787 L0.407673436,83.8433537 Z" id="Fill-7" fill="#FDC52F"></path>
+                    <path d="M155.121717,201.909302 L380.182432,262.214127 L22.6661088,0.773738797 L155.121717,201.909302 Z" id="Fill-15" fill="#F2784B"></path>
+                    <path d="M22.6661088,0.773738847 C58.3777042,66.7963573 127.701651,193.90168 128.075784,194.662365 L155.213569,202.189153" id="Fill-17" fill-opacity="0.1" fill="#000000"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

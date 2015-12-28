@@ -1,0 +1,38 @@
+//slide 4 items
+
+
+
+.wipes__section--fifth {
+
+   .item {
+
+      &__apps {
+         //width: 162px;
+         @include proportionalWidthReduce(162px);
+         right: 70px;
+         bottom: 140px;
+      }
+
+      &__chocolate {
+         //width: 383px;
+         @include proportionalWidthReduce(383px);
+         bottom: 50%;
+      }
+
+      &__magazine {
+         //width: 545px;
+         @include proportionalWidthReduce(545px);
+         right: -250px;
+         bottom: 150px;
+      }
+
+      &__receipts {
+         left: -50px;
+         //width: 419px;
+         @include proportionalWidthReduce(419px);
+         bottom: 0;
+      }
+
+   }
+
+}

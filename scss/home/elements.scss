@@ -1,0 +1,241 @@
+//homepage
+.cornerelement {
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 9999;
+   @media screen and (max-width: $small-breakpoint) {
+      width: 52%;
+   }
+
+   &.bottom {
+      bottom: 0;
+      right: 0px;
+      left: auto;
+
+      @media screen and (max-width: $small-breakpoint) {
+          width: 18%;
+      }
+
+      img {
+         float: right;
+         position: absolute;
+         bottom: 0px;
+         right: -90px;
+      }
+   }
+}
+
+.slidezerocopy {
+   top: 26vh;
+   width: 40%;
+   position: relative;
+
+   @media screen and (max-width: $small-breakpoint) {
+      top: 28vh;
+      width: 55%;
+   }
+
+   @media screen and (max-width: $xsmall-breakpoint) {
+      width: 62%;
+   }
+
+   &__wrapper {
+      h1 {
+         color: white;
+         line-height: 3.2rem;
+
+         @media screen and (max-width: $small-breakpoint) {
+            font-size: 1.6rem;
+            line-height: 2rem;
+         }
+      }
+      p {
+         color: white;
+         font-size: 1.4rem;
+         font-weight: 100;
+
+         @media screen and (max-width: $small-breakpoint) {
+            font-size: 1rem;
+         }
+      }
+   }
+}
+
+.item {
+   position: absolute;
+   z-index: 9;
+   opacity: 0;
+}
+
+.imageActive .item {
+   opacity: 1;
+}
+
+.nav {
+   position: fixed;
+   top: 0;
+   right: 0;
+   z-index: 9999;
+
+   @media screen and (max-width: $small-breakpoint) {
+      display: none;
+   }
+
+   ul {
+      text-align: center;
+      margin-right: 65px;
+
+      li {
+         display: inline-block;
+         padding: 30px 15px;
+
+         a {
+            color: white;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+         }
+      }
+   }
+}
+
+
+footer {
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+   color: white;
+   z-index: 9999;
+   margin-bottom: -1px;
+
+   @media screen and (max-width: $small-breakpoint) {
+      background-color: black;
+      height: 50px;
+   }
+
+   .footerwrapper {
+      margin: 4%;
+      width: 92%;
+      position: relative;
+      margin-top: -80px;
+
+      @media screen and (max-width: $small-breakpoint) {
+         margin-top: 13px;
+      }
+   }
+
+   .third {
+      width: 30%;
+      left: 50%;
+      margin-left: -15%;
+      position: absolute;
+      font-weight: 100;
+
+      @media screen and (max-width: $small-breakpoint) {
+         width: 50%;
+      }
+
+      a, p {
+         font-weight: 100;
+      }
+
+      &:first-child {
+         left: 0px;
+         margin-left: 0px;
+      }
+      &:last-child {
+         right: 0px;
+         left: auto;
+         margin-left: 0px;
+      }
+
+      .chevron-down {
+
+         margin: auto;
+         display: block;
+         position: absolute;
+         width: 100%;
+         top: 40px;
+
+         &.rotate {
+            img {
+               -webkit-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                -o-transform: rotate(0deg);
+                -ms-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+         }
+
+         img {
+            -webkit-transform: rotate(180deg);
+             -moz-transform: rotate(180deg);
+             -o-transform: rotate(180deg);
+             -ms-transform: rotate(180deg);
+             transform: rotate(180deg);
+
+             -webkit-transition: 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+             -moz-transition: 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+             -o-transition: 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+             transition: 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+         }
+      }
+   }
+
+   .positionlabel {
+      text-align: center;
+      margin-top: -30px;
+
+      @media screen and (max-width: $small-breakpoint) {
+         display: none;
+      }
+   }
+
+   .privacyandsharing {
+      width: 50%;
+      ul {
+         list-style: none;
+         float: right;
+
+         &.privacy {
+            @media screen and (max-width: $small-breakpoint) {
+               display: none;
+            }
+         }
+
+         li {
+            display: inline-block;
+            padding: 0 5px;
+            a {
+               color: palette(white);
+            }
+         }
+      }
+   }
+}
+
+
+
+.homebody {
+   header {
+      position: fixed;
+      min-height: 90px;
+      width: 100%;
+      z-index: 99999;
+      right: 0;
+      top: 0;
+   }
+
+   .top-bar .toggle-topbar {
+      background-color: transparent;
+
+      #nav-icon span {
+         background-color: white;
+      }
+   }
+
+   #jsNavParent .navigation__list li a {
+      color: palette(core-blue, dark);
+   }
+}

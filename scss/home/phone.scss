@@ -1,0 +1,70 @@
+//phone styles
+.phone {
+   opacity: 0;
+   margin-top: 20px;
+
+   &__wrapper {
+      height: 649px;
+      width: 349px;
+      background: url(../img/homepage/screens/Phone.png) top left no-repeat;
+      background-size: contain;
+      position: absolute;
+      z-index: 999;
+      left: 0;
+      margin-top: 7vh;
+
+      @include phoneWidthReduce(349px, 649px);
+   }
+
+   &__screen {
+      position: relative;
+      width: 256px;
+      height: 455px;
+      overflow: hidden;
+      margin-top: 76px;
+      margin-left: 23px;
+      border-radius: 3px;
+
+
+      @media screen and (max-width: $small-breakpoint) {
+         width: 73.5%;
+         height: 455px;
+         overflow: hidden;
+         margin-top: 2px;
+         margin-left: 20px;
+      }
+
+      @media screen and (max-width: $xsmall-breakpoint) {
+         width: 73.5%;
+         height: 455px;
+         overflow: hidden;
+         margin-top: -73px;
+         margin-left: 16px;
+      }
+   }
+
+   &__img {
+      position: absolute;
+      bottom: -455px;
+      width: 100%;
+
+      &--first {
+         bottom: 0;
+      }
+   }
+}
+
+
+.responsiveWrapper {
+   position: absolute;
+   z-index: 999;
+   left: 50%;
+   width: 800px;
+   margin-left: -400px;
+   top: 0;
+
+   @media screen and (max-width: $small-breakpoint) {
+      width: 90%;
+      margin-left: -45%;
+   }
+}
