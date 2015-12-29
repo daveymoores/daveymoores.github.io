@@ -71,6 +71,7 @@
 
         <!--navigation bar-->
         <nav class="top-bar" data-topbar role="navigation" id="jsNavParent">
+           <a href="#_" class="show-for-small-only"><img src="./img/roostermoney_icons/logo-mobile.svg" alt="Rooster Money Logo"></a>
 
             <ul class="title-area">
                <li class="name"></li>
@@ -93,7 +94,7 @@
                   <!--add disabled class to list item of current page to disable animation-->
                  <ul class="navigation__list" id="jsNavigationHook">
                     <!--keep this without formatting to prevent gaps that appear with inline styles-->
-                   <li class="navigation__list--white"><a href="/"><span class="icon icon--about"></span><span>About Us</span></a></li><li class="navigation__list--white"><a href="/help"><span class="icon icon--help"></span><span>Help</span></a></li><li class="navigation__list--white"><a href="/blog"><span class="icon icon--blog"></span><span>Blog</span></a></li><li class="navigation__list--white"><a href="/terms"><span class="icon icon--terms"></span><span>Terms Of Service</span></a></li><li class="navigation__list--white"><a href="/privacy"><span class="icon icon--privacy"></span><span>Privacy Policy</span></a></li>
+                   <li class="navigation__list--lightblue"><a href="/"><span class="icon icon--about"></span><span>About Us</span></a></li><li class="navigation__list--orange"><a href="/help"><span class="icon icon--help"></span><span>Help</span></a></li><li class="navigation__list--green"><a href="/blog"><span class="icon icon--blog"></span><span>Blog</span></a></li>
                  </ul>
 
                </section>
@@ -137,13 +138,13 @@
      <div id="jsWipesHook" class="wipes wipes__container">
          <div class="section wipes__section wipes__section--first" data-color="1">
 
-            <!--touch panel-->
-            <!-- <div class="mobTouch"></div> -->
-            <!--end touch panel-->
-
 
             <!--start responsiveWrapper -->
             <div class="responsiveWrapper" id="jsResponsiveWrapperHook">
+
+               <!--touch panel-->
+               <div class="mobTouch" id="mobTouch"></div>
+               <!--end touch panel-->
 
                <div class="phone" id="jsPhoneHook">
                   <div class="phone__wrapper">
@@ -160,6 +161,19 @@
                   <div class="slidezerocopy__wrapper" id="jsZeroCopyHook">
                     <h1>Pocket Money,<br> Sorted.</h1>
                     <p>Transform the way you manage pocket money with your family.</p>
+
+
+                    <!--app icons-->
+                    <div class="appicons" id="jsAppIconsFirst">
+                       <div class="appicons__app">
+                          <a href="#_"><img src="img/appstore_icons/app-store.png" alt=""></a>
+                       </div>
+                       <div class="appicons__play">
+                          <a href="#_"><img src="img/appstore_icons/play-store.png" alt=""></a>
+                       </div>
+                    </div>
+                    <!--end app icons-->
+
                   </div>
                </div>
 
@@ -168,31 +182,40 @@
                        <div class="text__section phone__section--first">
 
                           <h2>Easy for parents, fun for kids.</h2>
-                          <p><br class="show-for-extra-small-only">We believe in the power of pocket money to teach the value of money. RoosterMoney lets kids keep track of money and save for the things they love, while parents oversee what money goes in and out of their account.
-                          <br>
-                          <br>
-                          <span class="hide-for-extra-small-only">Parents remain the Bank of Mum and Dad without making deposits, while kids take control of their money.</span></p>
+                          <p class="hide-for-small-only">RoosterMoney lets kids keep track of money and save for the things they love, while parents oversee what money goes in and out of their account. Parents remain the Bank of Mum and Dad without making deposits, keeping it simple and easy to use.</p>
+                          <p class="show-for-small-only"><br class="show-for-extra-small-only">RoosterMoney lets kids keep track of money, while parents oversee what money goes in and out. No deposits are required.</p>
+
+                          <!--app icons-->
+                          <div class="appicons" id="jsAppIconsLast">
+                            <div class="appicons__app">
+                               <a href="#_"><img src="img/appstore_icons/app-store.png" alt=""></a>
+                            </div>
+                            <div class="appicons__play">
+                               <a href="#_"><img src="img/appstore_icons/play-store.png" alt=""></a>
+                            </div>
+                          </div>
+                          <!--end app icons-->
 
                        </div>
                        <div class="text__section phone__section--second">
 
                           <h2>Every member of the family has an account.</h2>
-                          <p><br><br>We keep things all fair and square. Kids know how much pocket money they have in their account. Parents get an overview on what pocket money their family holds.</p>
+                          <p class="hide-for-small-only"><br><br>We keep things all fair and square. Kids know how much pocket money they have in their account. Parents get an overview on what pocket money their family holds.</p>
+                          <p class="show-for-small-only"><br>Kids know how much pocket money they have in their account. Parents get an overview on what pocket money their family holds.</p>
 
                        </div>
                        <div class="text__section phone__section--third">
 
                           <h2>Create Goals to Save For</h2>
-                          <p><br class="show-for-extra-small-only">We all have things we want to save for. Upload goals to save for, that could be a bike, trainers or to add to their Savings Account.
-                          <br>
-                          <br>
-                          When kids reach their goal, parents can approve and buy the goal.</p>
+                          <p class="hide-for-small-only">Children can upload goals to save for, that could be a bike, trainers or their. When kids reach their goal, parents can approve and fulfil the goal or add the money to a Savings Account.</p>
+                          <p class="show-for-small-only"><br class="show-for-extra-small-only">Children or parents can upload goals to save for, that could be a bike, trainers or something else.</p>
 
                        </div>
                        <div class="text__section phone__section--fourth">
 
                           <h2>No more Shopping<br> Showdowns</h2>
-                          <p><br><br>If kids want to get something while out and about, they can take responsibility for the decision as to whether they buy something or not. <b>Power to kids, no pestering for parents.</b></p>
+                          <p class="hide-for-small-only"><br><br>If kids want to get something while out and about, they can take responsibility for the decision as to whether they buy something or not. Parent just deduct if off their account. Power to kids, no pestering for parents.</p>
+                          <p class="show-for-small-only"><br>If kids want to get something while out and about, they can take responsibility for the decision as to whether they buy something or not.</p>
 
                        </div>
 
@@ -309,7 +332,7 @@
                   <div class="text__section phone__section--sixth last">
 
                        <h2>Smart. Simple. Fun. That's the way we roll.</h2>
-                       <p class="hide-for-extra-small-only">Signup on a Smartphone and Tablet in under <span>3 minutes</span></p>
+                       <p>Sign Up on Smartphone or Tablet in under 3 minutes.</p>
                        <p>
                           <ul class="currencies">
                              <li><img src="img/homepage/currency-buttons/chf.png" alt=""></li>
@@ -320,6 +343,17 @@
                        </p>
 
                        <p id="apptext">Get the app for free</p>
+
+                       <!--app icons-->
+                       <div class="appicons" id="jsAppIconsClose">
+                         <div class="appicons__app">
+                            <a href="#_"><img src="img/appstore_icons/app-store.png" alt=""></a>
+                         </div>
+                         <div class="appicons__play">
+                            <a href="#_"><img src="img/appstore_icons/play-store.png" alt=""></a>
+                         </div>
+                       </div>
+                       <!--end app icons-->
 
                        <div class="row quoteboxes" data-equalizer>
 
@@ -379,8 +413,8 @@
            <div class="copyright third">&#169; RoosterMoney</div>
 
            <div class="positionlabel third">
-              <p id="sectionTitle"></p>
-              <span class="chevron-down"><img src="img/homepage/chevron.svg" alt=""></span>
+              <!-- <p id="sectionTitle"></p> -->
+              <span class="chevron-down" id="chevron-down"><img src="img/homepage/chevron.svg" alt=""></span>
            </div>
 
            <div class="privacyandsharing third">
@@ -403,6 +437,7 @@
     <script src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>
     <script src="./js/vendor/jquery.fullPage.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/vendor/jquery.touchSwipe.min.js"></script>
     <script src="js/homescript.js"></script>
 
 

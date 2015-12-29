@@ -22,13 +22,29 @@
       @include textWidthReduce(60%);
       position: absolute;
       margin-left: 45%;
-      top: 30vh;
+      top: 25vh;
    }
 
    &__section {
       position: absolute;
       top: 0px;
       width: 100%;
+
+      @media screen and (max-width: $i5-breakpoint) {
+         top: 15px;
+      }
+
+
+      .appicons {
+         margin-top: 240px;
+         width: 80%;
+         opacity: 0;
+
+         @media screen and (max-width: $small-breakpoint) {
+            display: none;
+         }
+      }
+
 
       h2, p {
          color: palette(white);
@@ -55,13 +71,13 @@
          top: 60px;
 
          @media screen and (max-width: $small-breakpoint) {
-            font-size: 0.8rem;
-            top: 30px;
+            font-size: 0.9rem;
+            top: 45px;
          }
 
          @media screen and (max-width: $i5-breakpoint) {
             font-weight: normal;
-            font-size: 0.7rem;
+            font-size: 0.8rem;
          }
       }
 
@@ -90,7 +106,7 @@
 
          .currencies {
             @media screen and (max-width: $small-breakpoint) {
-               display: none;
+
             }
          }
 
@@ -103,10 +119,9 @@
             }
 
             &#apptext {
-               top: 150px;
 
-               @media screen and (max-width: $i5-breakpoint) {
-                  top: 100px;
+               @media screen and (max-width: $small-breakpoint) {
+                  top: 195px;
                }
             }
 

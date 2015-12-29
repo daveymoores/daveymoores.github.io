@@ -26,13 +26,60 @@
    }
 }
 
+
+.appicons {
+   margin-top: 40px;
+   opacity: 1;
+
+   &__app {
+      width: 48%;
+      margin-right: 2%;
+      float: left;
+   }
+
+   &__play {
+      width: 48%;
+      margin-left: 2%;
+      float: right;
+   }
+
+   @media screen and (max-width: $medium-breakpoint) {
+      display: none;
+
+      &#jsAppIconsFirst, &#jsAppIconsClose {
+         display: block;
+      }
+   }
+
+   @media screen and (max-width: $small-breakpoint) {
+      display: block;
+
+      &__app {
+         width: 75%;
+         margin-right: 0%;
+         float: left;
+         margin-bottom: 10px;
+      }
+
+      &__play {
+         width: 75%;
+         margin-left: 0%;
+         float: left;
+      }
+   }
+
+}
+
+
+
+
 .slidezerocopy {
    top: 26vh;
-   width: 40%;
+   width: 45%;
    position: relative;
 
    @media screen and (max-width: $small-breakpoint) {
-      top: 28vh;
+      top: 20vh;
       width: 55%;
    }
 
@@ -158,6 +205,8 @@ footer {
          width: 100%;
          top: 40px;
 
+         -webkit-animation: bounce 2s infinite ease-in-out;
+
          &.rotate {
             img {
                -webkit-transform: rotate(0deg);
@@ -165,6 +214,7 @@ footer {
                 -o-transform: rotate(0deg);
                 -ms-transform: rotate(0deg);
                 transform: rotate(0deg);
+                -webkit-animation: none;
             }
          }
 
@@ -216,6 +266,12 @@ footer {
 }
 
 
+@-webkit-keyframes bounce {
+	0%, 20%, 60%, 100%  { -webkit-transform: translateY(0); }
+    40%  { -webkit-transform: translateY(-20px); }
+	80% { -webkit-transform: translateY(-10px); }
+}
+
 
 .homebody {
    header {
@@ -235,7 +291,29 @@ footer {
       }
    }
 
+   .top-bar {
+      a.show-for-small-only {
+         display: none!important;
+      }
+   }
+
+
+   .top-bar.expanded a.show-for-small-only {
+      float: left;
+      position: absolute;
+      z-index: 99;
+      display: block!important;
+   }
+
+   .top-bar.expanded .title-area {
+      background-color: white;
+
+      #nav-icon span {
+         background-color: palette(core-blue, dark);
+      }
+   }
+
    #jsNavParent .navigation__list li a {
-      color: palette(core-blue, dark);
+      color: palette(white);
    }
 }

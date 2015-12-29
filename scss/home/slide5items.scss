@@ -9,6 +9,35 @@
    letter-spacing: 2px;
 }
 
+#jsAppIconsClose {
+   margin-left: -165px;
+   width: 330px;
+   position: absolute;
+   left: 50%;
+   margin-top: 80px;
+
+   @media screen and (max-width: $small-breakpoint) {
+      display: block;
+      margin-left: -45%;
+      width: 90%;
+      position: absolute;
+      left: 50%;
+      top: 140px;
+
+      .appicons__play {
+         width: 48%;
+         margin-right: 2%;
+         float: left;
+      }
+
+      .appicons__app {
+         width: 48%;
+         margin-left: 2%;
+         float: right;
+      }
+   }
+}
+
 .quoteboxes {
 
    margin-top: 270px;
@@ -21,11 +50,13 @@
 
    @media screen and (max-width: $small-breakpoint) {
 
+      display: none;
+
       .medium-4 {
          display: none;
 
          &:first-child {
-            display: block;
+            //display: block;
 
             p {
                padding: 0px;
@@ -50,7 +81,7 @@
          display: none;
 
          &.first {
-            display: block;
+            //display: block;
             padding: 0px;
          }
       }
@@ -118,7 +149,11 @@
    margin: auto;
    display: block;
    position: relative;
-   margin-top: 105px;
+   margin-top: 13vh;
+
+   @media screen and (max-width: $small-breakpoint) {
+      margin-top: 140px;
+   }
 
    li {
       width: 30px;

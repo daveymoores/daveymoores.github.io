@@ -238,6 +238,7 @@ $(document).ready(function() {
             easing: easingQuadIn,
             complete: function(elements) {}});
 
+
             $text.find('.viewable').find('p').velocity("stop", true).velocity({
                marginTop: '-30px',
                opacity: '0'
@@ -255,6 +256,7 @@ $(document).ready(function() {
                        opacity: '1'
                     }, 550,  easingQuadOut);
 
+
                     $el.find('p').velocity("stop", true).velocity({
                        marginTop: '0px',
                        opacity: '1'
@@ -268,6 +270,7 @@ $(document).ready(function() {
                         $el.prev().removeClass('viewable');
 
                      }});
+
 
                   } else {
 
@@ -294,6 +297,7 @@ $(document).ready(function() {
              easing: easingQuadOut,
              delay: 80
              });
+
 
           }
 
@@ -350,6 +354,7 @@ $(document).ready(function() {
 
                       }});
 
+
                    } else {
 
                       $text.find('.viewable').removeClass('viewable');
@@ -397,9 +402,7 @@ $(document).ready(function() {
           easing: easingQuadIn
           });
 
-
-           $('#jsRoosterHook').addClass('rotate');
-
+          $('#jsRoosterHook').addClass('rotate');
 
           $('#jsZeroCopyHook').find('h1').velocity("stop", true).velocity({
              marginTop: '-15px',
@@ -415,6 +418,12 @@ $(document).ready(function() {
           easing: easingQuadOut,
           delay: 40
           });
+
+          $('#jsAppIconsFirst').velocity("stop", true).velocity({
+             marginTop: '0px',
+             opacity: '0'
+          }, 450,  easingQuadOut);
+
       }
 
       if(x == 2 && y == 'up') {
@@ -445,6 +454,12 @@ $(document).ready(function() {
           easing: easingQuadOut,
           delay: 80
           });
+
+
+          $('#jsAppIconsFirst').velocity("stop", true).velocity({
+             marginTop: '0px',
+             opacity: '1'
+          }, 450,  easingQuadOut);
       }
 
    }
@@ -471,13 +486,20 @@ $(document).ready(function() {
       {
        duration: 550,
        easing: easingQuadOut,
-       delay: 980
-       });
+       delay: 980,
+       complete: function(elements) {
+
+          $('#jsResponsiveWrapperHook').hide();
+
+       }});
+
 
    }
 
 
    function finalPanelHide() {
+
+      $('#jsResponsiveWrapperHook').show();
 
       $('#sectionTitle').next().removeClass('rotate');
 
@@ -514,6 +536,24 @@ $(document).ready(function() {
                foneOutOfView();
                finalPanelShow();
 
+               $('#jsAppIconsLast').velocity("stop", true).velocity({
+                  marginTop: '200px',
+                  opacity: '0'
+               }, 450,  easingQuadOut);
+
+               $('#jsAppIconsClose').velocity("stop", true).velocity({
+                  marginTop: '90px',
+                  opacity: '1'
+               },
+               {
+               duration: 550,
+               easing: easingQuadOut,
+               delay: 0
+               });
+
+               $('#chevron-down').addClass('rotate');
+
+
             } else if(k=='up') {
 
                ScreenSwipeDown();
@@ -524,6 +564,29 @@ $(document).ready(function() {
 
             foneIntoView();
             finalPanelHide();
+
+            $('#jsAppIconsLast').velocity("stop", true).velocity({
+               marginTop: '220px',
+               opacity: '1'
+            },
+            {
+             duration: 550,
+             easing: easingQuadOut,
+             delay: 200
+             });
+
+             $('#jsAppIconsClose').velocity("stop", true).velocity({
+                marginTop: '80px',
+                opacity: '0'
+             },
+             {
+             duration: 350,
+             easing: easingQuadOut,
+             delay: 0
+             });
+
+             $('#chevron-down').removeClass('rotate');
+
 
          } else {
 
@@ -541,6 +604,12 @@ $(document).ready(function() {
 
                   foneOutOfView();
 
+                  $('#jsAppIconsLast').velocity("stop", true).velocity({
+                     marginTop: '260px',
+                     opacity: '0'
+                  }, 450,  easingQuadOut);
+
+
                }
 
             }
@@ -550,6 +619,16 @@ $(document).ready(function() {
       } else {
 
          foneIntoView();
+
+         $('#jsAppIconsLast').velocity("stop", true).velocity({
+            marginTop: '220px',
+            opacity: '1'
+         },
+         {
+          duration: 550,
+          easing: easingQuadOut,
+          delay: 400
+          });
 
       }
 
@@ -572,6 +651,26 @@ $(document).ready(function() {
 
 
    if (/Mobi/.test(navigator.userAgent)) {
+
+      $(function() {
+       //Enable swiping...
+       $("#mobTouch").swipe( {
+         //Generic swipe handler for all directions
+         swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+
+            console.log(direction);
+            if(direction == 'down') {
+               $.fn.fullpage.moveSectionUp();
+            } else if(direction == 'up') {
+               $.fn.fullpage.moveSectionDown();
+            }
+
+         },
+         //Default is 75px, set to 0 for demo so any distance triggers swipe
+           threshold: 30
+       });
+      });
+
 
       $('#jsWipesHook').fullpage({
         menu: '#menu',
@@ -600,9 +699,9 @@ $(document).ready(function() {
 
            $('#body').addClass('imageActive');
 
-           slideTimeout = setInterval(function () {
-               $.fn.fullpage.moveSectionDown();
-           }, 3000);
+         //   slideTimeout = setInterval(function () {
+         //       $.fn.fullpage.moveSectionDown();
+         //   }, 3000);
 
         },
         afterLoad: function(anchorLink, index){
@@ -638,24 +737,23 @@ $(document).ready(function() {
            cornerElement(index, direction)             //animate coloured corner element
 
 
-
-           $('#sectionTitle').velocity({
-               marginTop: '10px',
-               opacity: 0
-           }, 300, function(){
-
-             if(direction == 'down') {
-               $(this).text(title).css('margin-top', '0px').velocity("stop", true).velocity({
-                 opacity: 1
-                 }, 300);
-             } else {
-               $(this).text(prevTitle).css('margin-top', '0px').velocity("stop", true).velocity({
-                 opacity: 1
-                 }, 300);
-             }
-
-
-           });
+           //----section title is here if its needed
+         //   $('#sectionTitle').velocity({
+         //       marginTop: '10px',
+         //       opacity: 0
+         //   }, 300, function(){
+           //
+         //     if(direction == 'down') {
+         //       $(this).text(title).css('margin-top', '0px').velocity("stop", true).velocity({
+         //         opacity: 1
+         //         }, 300);
+         //     } else {
+         //       $(this).text(prevTitle).css('margin-top', '0px').velocity("stop", true).velocity({
+         //         opacity: 1
+         //         }, 300);
+         //     }
+         //
+          //});
 
         },
         afterRender: function(){
