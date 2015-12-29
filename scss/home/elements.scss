@@ -48,6 +48,8 @@
 
       &#jsAppIconsFirst, &#jsAppIconsClose {
          display: block;
+         position: absolute;
+         z-index: 99999;
       }
    }
 
