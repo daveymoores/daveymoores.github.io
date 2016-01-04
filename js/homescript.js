@@ -619,7 +619,7 @@ $(document).ready(function() {
          foneIntoView();
 
          if (/Mobi/.test(navigator.userAgent)) {
-            
+
             $('#chevron-down').velocity("stop", true).velocity({
                opacity: '0'
             });
@@ -690,7 +690,7 @@ $(document).ready(function() {
 
          },
          //Default is 75px, set to 0 for demo so any distance triggers swipe
-           threshold: 30
+           threshold: 0
        });
       });
 
