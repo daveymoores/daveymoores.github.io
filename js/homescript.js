@@ -685,10 +685,8 @@ $(document).ready(function() {
 
                if(direction == 'down') {
                   $.fn.fullpage.moveSectionUp();
-                  $("#mobTouch").addClass('active'); //active prevents double swipe
                } else if(direction == 'up') {
                   $.fn.fullpage.moveSectionDown();
-                  $("#mobTouch").addClass('active');  //active prevemts double swipe
                }
 
             }
@@ -719,7 +717,7 @@ $(document).ready(function() {
            animateShards($this, index, direction);     //animate corner shards
            cornerElement(index, direction)             //animate coloured corner element
 
-
+           $("#mobTouch").addClass('active');  //active prevemts double swipe
         },
         afterRender: function(){
 
