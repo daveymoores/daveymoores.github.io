@@ -3,7 +3,7 @@
    position: fixed;
    top: 0;
    left: 0;
-   z-index: 9999;
+   z-index: 9997;
    width: 38%;
 
    @media screen and (max-width: $small-breakpoint) {
@@ -250,7 +250,10 @@
       margin-top: -30px;
 
       @media screen and (max-width: $small-breakpoint) {
-         display: none;
+         margin-top: -90px;
+         left: 50%;
+         margin-left: -50%;
+         width: 100%;
       }
    }
 
