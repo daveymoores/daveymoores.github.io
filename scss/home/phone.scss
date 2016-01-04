@@ -95,6 +95,11 @@
    margin-left: -400px;
    top: 0;
 
+   @media screen and (max-width: $ipad-breakpoint) {
+      width: 90%;
+      margin-left: -45%;
+   }
+
    @media screen and (max-width: $small-breakpoint) {
       width: 90%;
       margin-left: -45%;

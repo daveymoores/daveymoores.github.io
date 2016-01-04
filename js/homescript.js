@@ -59,13 +59,11 @@ $(document).ready(function() {
 
    function ScreenSwipeDown() {
 
-      //setTimeout(function(){
-         $fone.find('.active').velocity("stop", true).velocity({
-            bottom: '-455'
-         }, 750, easingQuadIn, function(){
-            $(this).prev().addClass('active');
-         });
-      //}, 200);
+      $fone.find('.active').velocity("stop", true).velocity({
+         bottom: '-455'
+      }, 750, easingQuadIn, function(){
+         $(this).prev().addClass('active');
+      });
 
    }
 
@@ -637,19 +635,35 @@ $(document).ready(function() {
 
 
 
-   //  window.addEventListener("keydown", function(e) {
-   //       // space and arrow keys
-   //       if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
-   //          alert('>>>>>');
-   //           e.preventDefault();
-   //       }
-   //   }, false);
+   //-----throttle key press to prevent breaking animation....
+   var allowKeyPress = true;
+
+   $(document).keyup(function(e){
+   if (e.keyCode == 40) {
+       if (!allowKeyPress)
+           return false;
+       allowKeyPress = false;
+       setTimeout(function() { allowKeyPress = true; }, 1400);
+
+       $.fn.fullpage.moveSectionDown();
+       return false;
+    } else if(e.keyCode == 38) {
+      if (!allowKeyPress)
+          return false;
+      allowKeyPress = false;
+      setTimeout(function() { allowKeyPress = true; }, 1400);
+
+      $.fn.fullpage.moveSectionUp();
+      return false;
+    }
+     e.preventDefault();
+   });
 
 
 
 
 
-
+   //------conditional for touch screens...
    if (/Mobi/.test(navigator.userAgent)) {
 
       $(function() {
@@ -679,9 +693,7 @@ $(document).ready(function() {
         lockAnchors: false,
         scrollingSpeed: 1400,
         fitToSection: true,
-        //scrollBar: true,
         fixedElements: '#jsResponsiveWrapperHook',
-        //anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage'],
         onLeave: function(index, nextIndex, direction){
 
            var $this = $(this),
@@ -699,10 +711,6 @@ $(document).ready(function() {
 
            $('#body').addClass('imageActive');
 
-         //   slideTimeout = setInterval(function () {
-         //       $.fn.fullpage.moveSectionDown();
-         //   }, 3000);
-
         },
         afterLoad: function(anchorLink, index){
 
@@ -713,7 +721,7 @@ $(document).ready(function() {
 
    } else {
 
-      $('.mobTouch').hide();
+      $('#mobTouch').hide();
 
       $('#jsWipesHook').fullpage({
         menu: '#menu',
@@ -723,7 +731,6 @@ $(document).ready(function() {
         scrollingSpeed: 1400,
         fitToSection: true,
         fixedElements: '#jsResponsiveWrapperHook',
-        //anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage'],
         onLeave: function(index, nextIndex, direction){
 
            var $this = $(this),
@@ -736,36 +743,16 @@ $(document).ready(function() {
            animateShards($this, index, direction);     //animate corner shards
            cornerElement(index, direction)             //animate coloured corner element
 
-
-           //----section title is here if its needed
-         //   $('#sectionTitle').velocity({
-         //       marginTop: '10px',
-         //       opacity: 0
-         //   }, 300, function(){
-           //
-         //     if(direction == 'down') {
-         //       $(this).text(title).css('margin-top', '0px').velocity("stop", true).velocity({
-         //         opacity: 1
-         //         }, 300);
-         //     } else {
-         //       $(this).text(prevTitle).css('margin-top', '0px').velocity("stop", true).velocity({
-         //         opacity: 1
-         //         }, 300);
-         //     }
-         //
-          //});
-
         },
         afterRender: function(){
 
            $('#body').addClass('imageActive');
 
-        },
-        afterLoad: function(anchorLink, index){
-
-
         }
      });
+
+     $.fn.fullpage.setKeyboardScrolling(false);
+
 
    }
 

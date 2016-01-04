@@ -1,11 +1,46 @@
 //resourcesbox and breadcrumb
 
+.content.resources {
+   margin-top: 0px;
+}
+
+.mobilebreadcrumb {
+      &__content {
+         padding: 10px 0;
+         span {
+            height: 30px;
+            width: 30px;
+            background-color: black;
+            border-radius: 50%;
+            display: inline-block;
+            float: left;
+         }
+
+         a {
+            display: inline-block;
+            float: left;
+            margin-top: 4px;
+            margin-left: 10px;
+         }
+      }
+}
+
 .breadcrumb {
+
+   margin-top: 50px;
+
+   @media screen and (max-width: $small-breakpoint) {
+      margin-top: 0px;
+   }
 
    &__list {
       padding: 0px;
       margin: 0px;
       list-style: none;
+
+      @media screen and (max-width: $small-breakpoint) {
+         display: none;
+      }
    }
 
    &__unit {

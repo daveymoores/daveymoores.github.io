@@ -70,6 +70,10 @@
          font-weight: 100;
          top: 60px;
 
+         @media screen and (max-width: $ipad-breakpoint) {
+            font-size: 1rem;
+         }
+
          @media screen and (max-width: $small-breakpoint) {
             font-size: 0.9rem;
             top: 45px;

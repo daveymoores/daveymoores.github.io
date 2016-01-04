@@ -43,6 +43,10 @@
    margin-top: 270px;
    display: none;
 
+   @media screen and (max-width: $ipad-breakpoint) {
+      margin-top: 310px;
+   }
+
    @media screen and (max-width: $i5-breakpoint) {
       margin-top: 200px;
    }
@@ -77,6 +81,14 @@
       margin-left: 45%;
       top: 35px!important;
 
+      @media screen and (max-width: $ipad-breakpoint) {
+         top: 40px!important;
+      }
+
+      @media screen and (max-width: $medium-large-breakpoint) {
+         top: 20px!important;
+      }
+
       @media screen and (max-width: $small-breakpoint) {
          display: none;
 
@@ -103,7 +115,7 @@
    }
 
    &__container {
-      min-height: 200px;
+      min-height: 100px;
 
       @media screen and (max-width: $small-breakpoint) {
          min-height: 140px;
@@ -118,6 +130,10 @@
       box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
       padding: 25px;
 
+      @media screen and (max-width: $medium-large-breakpoint) {
+         padding: 15px;
+      }
+
       p {
          font-size: 0.9rem!important;
          color: palette(steel)!important;
@@ -126,6 +142,10 @@
          top: auto;
          font-weight: normal!important;
          margin-bottom: 0px!important;
+
+         @media screen and (max-width: $large-breakpoint) {
+            font-size: 0.85rem!important;
+         }
 
          @media screen and (max-width: $small-breakpoint) {
              top: 0px!important;

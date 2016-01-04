@@ -4,6 +4,8 @@
    top: 0;
    left: 0;
    z-index: 9999;
+   width: 38%;
+
    @media screen and (max-width: $small-breakpoint) {
       width: 52%;
    }
@@ -80,6 +82,10 @@
    width: 45%;
    position: relative;
 
+   @media screen and (max-width: $ipad-breakpoint) {
+      width: 55%;
+   }
+
    @media screen and (max-width: $small-breakpoint) {
       top: 20vh;
       width: 55%;
@@ -150,7 +156,7 @@
 }
 
 
-footer {
+.homefooter {
    position: fixed;
    bottom: 0;
    width: 100%;
@@ -168,6 +174,10 @@ footer {
       width: 92%;
       position: relative;
       margin-top: -80px;
+
+      @media screen and (max-width: $medium-large-breakpoint) {
+         margin-top: -55px;
+      }
 
       @media screen and (max-width: $small-breakpoint) {
          margin-top: 13px;
