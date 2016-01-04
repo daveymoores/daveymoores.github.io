@@ -681,11 +681,16 @@ $(document).ready(function() {
          //Generic swipe handler for all directions
          swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
 
-            console.log(direction);
-            if(direction == 'down') {
-               $.fn.fullpage.moveSectionUp();
-            } else if(direction == 'up') {
-               $.fn.fullpage.moveSectionDown();
+            if(!$(this).hasClass('active')){
+
+               if(direction == 'down') {
+                  $.fn.fullpage.moveSectionUp();
+                  $("#mobTouch").addClass('active'); //active prevents double swipe
+               } else if(direction == 'up') {
+                  $.fn.fullpage.moveSectionDown();
+                  $("#mobTouch").addClass('active');  //active prevemts double swipe
+               }
+
             }
 
          },
@@ -723,6 +728,7 @@ $(document).ready(function() {
         },
         afterLoad: function(anchorLink, index){
 
+           $("#mobTouch").removeClass('active');
 
         }
      });

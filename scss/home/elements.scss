@@ -110,6 +110,10 @@
          font-size: 1.4rem;
          font-weight: 100;
 
+         @media screen and (max-width: $ipad-breakpoint) {
+            font-weight: normal;
+         }
+
          @media screen and (max-width: $small-breakpoint) {
             font-size: 1rem;
          }
