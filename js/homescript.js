@@ -618,6 +618,15 @@ $(document).ready(function() {
 
          foneIntoView();
 
+         if (/Mobi/.test(navigator.userAgent)) {
+            
+            $('#chevron-down').velocity("stop", true).velocity({
+               opacity: '0'
+            });
+
+         }
+
+
          $('#jsAppIconsLast').velocity("stop", true).velocity({
             marginTop: '220px',
             opacity: '1'
