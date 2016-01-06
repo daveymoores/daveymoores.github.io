@@ -8,7 +8,7 @@
    .item {
 
       &__coffeecup {
-         //width: 540px;
+         display: none;
          @include proportionalWidthReduce(540px);
          right: -125px;
          bottom: 140px;
@@ -19,6 +19,10 @@
          @include proportionalWidthReduce(401px);
          bottom: 20%;
          right: -150px;
+
+         @media screen and (min-width: $xlarge-breakpoint) {
+            right: 30px;
+         }
       }
 
       &__lego {
@@ -26,12 +30,21 @@
          @include proportionalWidthReduce(165px);
          right: 0;
          bottom: 80px;
+
+         @media screen and (min-width: $xlarge-breakpoint) {
+            right: 160px;
+         }
       }
 
       &__lego2 {
          right: 115px;
          //width: 140px;
          @include proportionalWidthReduce(140px);
+
+         @media screen and (min-width: $xlarge-breakpoint) {
+            right: 380px;
+            bottom: 240px;
+         }
       }
 
       &__notebook {
@@ -39,6 +52,10 @@
          bottom: 100px;
          //width: 581px;
          @include proportionalWidthReduce(581px);
+
+         @media screen and (min-width: $xlarge-breakpoint) {
+            left: -80px;
+         }
       }
 
       &__postit {
@@ -46,6 +63,11 @@
          top: 60px;
          //width: 245px;
          @include proportionalWidthReduce(245px);
+
+         @media screen and (min-width: $xlarge-breakpoint) {
+            right: 200px;
+            top: 100px;
+         }
       }
 
    }

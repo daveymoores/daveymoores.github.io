@@ -10,12 +10,21 @@
          @include proportionalWidthReduce(216px);
          right: -125px;
          bottom: 140px;
+
+         @media screen and (min-width: $xlarge-breakpoint) {
+            right: 50px;
+         }
       }
 
       &__goal {
          //width: 323px;
          @include proportionalWidthReduce(323px);
-         bottom: 50%;
+         bottom: 30%;
+
+         @media screen and (min-width: $xlarge-breakpoint) {
+            bottom: 35%;
+            left: 80px;
+         }
       }
 
       &__keylist {
@@ -23,6 +32,10 @@
          @include proportionalWidthReduce(278px);
          right: 0;
          bottom: 150px;
+
+         @media screen and (min-width: $xlarge-breakpoint) {
+            right: 200px;
+         }
       }
 
 

@@ -4,6 +4,10 @@
 
    width: $width;
 
+   @media screen and (min-width: $xlarge-breakpoint) {
+         width:($width / 10)*10.3;
+   }
+
    @media screen and (max-width: $large-breakpoint) {
          width:($width / 10)*8.3;
    }

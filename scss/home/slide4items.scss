@@ -7,30 +7,45 @@
    .item {
 
       &__apps {
-         //width: 162px;
          @include proportionalWidthReduce(162px);
          right: 70px;
          bottom: 140px;
+
+         @media screen and (min-width: $xlarge-breakpoint) {
+            right: 250px;
+         }
       }
 
       &__chocolate {
-         //width: 383px;
          @include proportionalWidthReduce(383px);
          bottom: 50%;
+
+         @media screen and (min-width: $xlarge-breakpoint) {
+            left: 50px;
+            bottom: 55%;
+         }
       }
 
       &__magazine {
-         //width: 545px;
          @include proportionalWidthReduce(545px);
          right: -250px;
          bottom: 150px;
+
+         @media screen and (min-width: $xlarge-breakpoint) {
+            right: -50px;
+            bottom: 250px;
+         }
       }
 
       &__receipts {
          left: -50px;
-         //width: 419px;
+
          @include proportionalWidthReduce(419px);
          bottom: 0;
+
+         @media screen and (min-width: $xlarge-breakpoint) {
+            left: 60px;
+         }
       }
 
    }

@@ -43,6 +43,10 @@
    margin-top: 270px;
    display: none;
 
+   @media screen and (min-width: $xlarge-breakpoint) {
+      margin-top: 310px;
+   }
+
    @media screen and (max-width: $ipad-breakpoint) {
       margin-top: 310px;
    }
@@ -162,12 +166,15 @@
 
 }
 
+.imageActive .currencies {
+   display: block;
+}
 
 .currencies {
    width: 160px;
    list-style: none;
    margin: auto;
-   display: block;
+   display: none;
    position: relative;
    margin-top: 13vh;
 

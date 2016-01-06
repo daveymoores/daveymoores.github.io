@@ -10,12 +10,20 @@
          @include proportionalWidthReduce(255px);
          right: -125px;
          bottom: 80px;
+
+         @media screen and (min-width: $xlarge-breakpoint) {
+            right: 0px;
+         }
       }
 
       &__coffee {
          //width: 244px;
          @include proportionalWidthReduce(244px);
          bottom: 50%;
+
+         @media screen and (min-width: $xlarge-breakpoint) {
+            left: 170px;
+         }
       }
 
       &__headphone {
@@ -24,12 +32,20 @@
          right: 0;
          bottom: 150px;
          display: none;
+
+         @media screen and (min-width: $xlarge-breakpoint) {
+
+         }
       }
 
       &__phone {
          left: -50px;
          //width: 270px;
          @include proportionalWidthReduce(270px);
+
+         @media screen and (min-width: $xlarge-breakpoint) {
+            left: 60px;
+         }
       }
 
       &__tablet {
@@ -37,6 +53,10 @@
          bottom: 30vh;
          //width: 451px;
          @include proportionalWidthReduce(451px);
+
+         @media screen and (min-width: $xlarge-breakpoint) {
+            right: -50px;
+         }
       }
 
       &__wallet {
@@ -44,6 +64,10 @@
          bottom: 40px;
          //width: 237px;
          @include proportionalWidthReduce(237px);
+
+         @media screen and (min-width: $xlarge-breakpoint) {
+            left: 340px;
+         }
       }
 
       &__jar {
@@ -51,6 +75,10 @@
          top: 0px;
          //width: 230px;
          @include proportionalWidthReduce(230px);
+
+         @media screen and (min-width: $xlarge-breakpoint) {
+
+         }
       }
 
    }
