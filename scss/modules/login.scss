@@ -1,0 +1,271 @@
+//login screens
+.login {
+   background-color: palette(core-blue, light);
+
+   .content {
+      padding-top: 100px;
+
+      @media screen and (max-width: $small-breakpoint) {
+         padding-top: 80px;
+      }
+   }
+
+   .cornerelement.bottom {
+      display: block;
+      z-index: -1;
+
+      img {
+         right: 0px;
+      }
+   }
+
+   .shard.bottom {
+       bottom: 0px;
+       left: 0px;
+       position: fixed;
+       opacity: 1;
+       z-index: -1;
+
+       img {
+         width: 20%;
+       }
+   }
+
+   .shard.top {
+       top: 0px;
+       right: 0px;
+       position: fixed;
+       opacity: 1;
+       z-index: -1;
+
+       img {
+        width: 30%;
+       }
+   }
+}
+
+.loginpanel {
+   background-color: palette(white);
+   border-radius: 5px;
+
+   @media screen and (max-width: $small-breakpoint) {
+      margin-bottom: 50px;
+   }
+
+   -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+   -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+
+   &__wrapper {
+      padding: 30px;
+   }
+
+   &__user {
+
+      border-bottom: 1px solid palette(grey);
+      margin: 0 0 15px;
+      height: 135px;
+
+      &:first-child {
+         margin-top: 0px;
+      }
+
+      &.last {
+         border-bottom: none;
+      }
+
+      &--img {
+         display: inline-block;
+         height: 120px;
+         width: 120px;
+
+         @media screen and (max-width: $ipad-breakpoint) {
+            height: 80px;
+            width: 80px;
+         }
+
+         @media screen and (max-width: $small-breakpoint) {
+            height: 100px;
+            width: 100px;
+         }
+
+         border-radius: 5px;
+         overflow: hidden;
+         margin-right: 20px;
+         float: left;
+      }
+
+      &--name {
+         display: inline-block;
+         margin-top: 10px;
+         width: 60%;
+
+         @media screen and (max-width: $small-breakpoint) {
+            width: 55%;
+         }
+
+         p {
+            @media screen and (max-width: $ipad-breakpoint) {
+               font-size: 0.9rem;
+            }
+
+         }
+      }
+
+      a.btn {
+         color: palette(white);
+         border-radius: 25px;
+         width: 100%;
+
+         span.arrow {
+            background-color: palette(core-blue, dark);
+            height: 20px;
+            width: 30px;
+            float: right;
+            margin-top: 5px;
+         }
+
+      }
+
+   }
+
+   span.bluetext {
+      color: palette(core-blue, light);
+   }
+
+   .nosignin {
+      margin-bottom: 0px;
+      width: 100%;
+      font-size: 0.9rem;
+      text-align: center;
+   }
+
+   &__findout {
+      background-color: palette(core-red);
+      border-radius: 5px;
+      padding: 20px;
+
+      @media screen and (max-width: $small-breakpoint) {
+         margin-bottom: 100px;
+      }
+
+      -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+      -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+
+      p {
+         color: palette(white);
+         font-size: 0.9rem;
+      }
+
+      a.yellow {
+         background-color: palette(core-yellow);
+         width: auto;
+      }
+   }
+
+}
+
+
+
+//if a cookie is present...
+.login.cookiepresent {
+
+   .loginpanel__wrapper {
+      padding: 40px 60px 50px;
+
+      @media screen and (max-width: $ipad-breakpoint) {
+         padding: 20px 30px 25px;
+      }
+
+      @media screen and (max-width: $small-breakpoint) {
+         padding: 20px 20px 15px;
+      }
+   }
+
+   .loginpanel__wrapper--title {
+      text-align: center;
+      font-size: 1.3rem;
+
+      @media screen and (max-width: $small-breakpoint) {
+         font-size: 1.1rem;
+      }
+   }
+
+
+   form {
+
+      margin-top: 35px;
+
+      @media screen and (max-width: $small-breakpoint) {
+         margin-top: 15px;
+      }
+
+      small.error {
+          padding-top: 8px !important;
+      }
+
+      .input {
+         position: relative;
+
+         &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            height: 30px;
+            width: 30px;
+            background-color: black;
+            top: 10px;
+            left: 10px;
+         }
+
+         &:focus {
+            border-color: palette(core-blue);
+         }
+
+         input.logininput {
+            padding-left: 50px;
+            border-color: palette(grey, dark);
+            background-color: palette(grey);
+
+            &::-webkit-input-placeholder { /* Safari, Chrome and Opera */
+              color: scale-color(palette(steel), $lightness: 30%);
+            }
+
+            &:-moz-placeholder { /* Firefox 18- */
+               color: scale-color(palette(steel), $lightness: 30%);
+            }
+
+            &::-moz-placeholder { /* Firefox 19+ */
+               color: scale-color(palette(steel), $lightness: 30%);
+            }
+
+            &:-ms-input-placeholder { /* IE 10+ */
+               color: scale-color(palette(steel), $lightness: 30%);
+            }
+
+            &::-ms-input-placeholder { /* Edge */
+              color: scale-color(palette(steel), $lightness: 30%);
+            }
+
+            &:placeholder-shown { /* Standard one last! */
+              color: scale-color(palette(steel), $lightness: 30%);
+            }
+         }
+      }
+
+      label {
+         text-indent: inherit;
+         font-size: 0.9rem;
+         color: palette(steel);
+      }
+
+      input.btn {
+         width: 100%;
+         margin-bottom: 25px;
+      }
+
+   }
+
+}

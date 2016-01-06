@@ -59,6 +59,20 @@
       }
    }
 
+   &.yellow {
+      background-color: palette(core-yellow);
+      box-shadow: 0px 0px 0px 2px palette(core-yellow);
+      width: 250px;
+      box-shadow: none;
+      color: palette(white);
+
+      &:hover {
+      cursor: pointer;
+      background-color: scale-color(palette(core-yellow), $lightness: -11%);
+      color: palette(white);
+      }
+   }
+
    &.blue {
       background-color: palette(core-blue, light);
       box-shadow: 0px 0px 0px 2px palette(core-blue, light);
