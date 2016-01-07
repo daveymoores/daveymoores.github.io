@@ -49,12 +49,6 @@
    background-size: contain;
    border-radius: 5px;
 
-   a {
-      font-weight: normal;
-      color: palette(core-blue, light);
-      text-decoration: underline;
-   }
-
    @media screen and (max-width: $small-breakpoint) {
       margin-bottom: 50px;
    }
@@ -72,6 +66,10 @@
       border-bottom: 1px solid palette(grey);
       margin: 0 0 15px;
       height: 135px;
+
+      @media screen and (max-width: $xsmall-breakpoint) {
+         height: auto;
+      }
 
       &:first-child {
          margin-top: 0px;
@@ -96,6 +94,14 @@
             width: 100px;
          }
 
+         @media screen and (max-width: $xsmall-breakpoint) {
+            height: 80px;
+            width: 80px;
+            margin: auto;
+            float: none;
+            display: block;
+         }
+
          border-radius: 5px;
          overflow: hidden;
          margin-right: 20px;
@@ -111,9 +117,17 @@
             width: 55%;
          }
 
+         @media screen and (max-width: $xsmall-breakpoint) {
+            width: 100%;
+         }
+
          p {
             @media screen and (max-width: $ipad-breakpoint) {
                font-size: 0.9rem;
+            }
+
+            @media screen and (max-width: $xsmall-breakpoint) {
+               text-align: center;
             }
 
          }
@@ -123,6 +137,10 @@
          color: palette(white);
          border-radius: 25px;
          width: 100%;
+
+         @media screen and (max-width: $medium-breakpoint) {
+             padding: 0.45em 0.9em 0.55em;
+         }
 
          span.arrow {
             background: transparent url(../img/login-icons/signin-arrow.svg) center center no-repeat;
@@ -146,6 +164,12 @@
       width: 100%;
       font-size: 0.9rem;
       text-align: center;
+
+      a {
+         font-weight: normal;
+         color: palette(core-blue, light);
+         text-decoration: underline;
+      }
    }
 
    &__findout {
