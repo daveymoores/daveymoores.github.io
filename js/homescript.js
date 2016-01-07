@@ -4,6 +4,7 @@ $(document).ready(function() {
    var $fone = $('#jsPhoneHook'),
        $text = $('#jsTextHook'),
        $body = $('#body'),
+       $circle = $('#jsCircleHook'),
        easingQuadOut = [ 0.250, 0.460, 0.450, 0.940 ],
        easingQuadIn = [ 0.250, 0.460, 0.450, 0.940 ];
 
@@ -11,21 +12,39 @@ $(document).ready(function() {
       switch (i) {
          case 1:
             $body.css('background-color', '#128ED8');
+
+            $circle.find('.current').removeClass('current');
+            $circle.find('li').eq(0).addClass('current');
             break;
          case 2:
             $body.css('background-color', '#D12F4F');
+
+            $circle.find('.current').removeClass('current');
+            $circle.find('li').eq(1).addClass('current');
             break;
          case 3:
             $body.css('background-color', '#4BABA0');
+
+            $circle.find('.current').removeClass('current');
+            $circle.find('li').eq(2).addClass('current');
             break;
          case 4:
             $body.css('background-color', '#1E4C80');
+
+            $circle.find('.current').removeClass('current');
+            $circle.find('li').eq(3).addClass('current');
             break;
          case 5:
             $body.css('background-color', '#EC633A');
+
+            $circle.find('.current').removeClass('current');
+            $circle.find('li').eq(4).addClass('current');
             break;
          case 6:
             $body.css('background-color', '#128ED8');
+
+            $circle.find('.current').removeClass('current');
+            $circle.find('li').eq(5).addClass('current');
             break;
          default:
             $body.css('background-color', '#128ED8');
