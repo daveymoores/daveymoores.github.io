@@ -43,8 +43,8 @@
    margin-top: 270px;
    display: none;
 
-   @media screen and (min-width: $xlarge-breakpoint) {
-      margin-top: 310px;
+   @media screen and (min-width: $large-breakpoint) {
+      margin-top: 35vh;
    }
 
    @media screen and (max-width: $ipad-breakpoint) {
