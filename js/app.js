@@ -145,6 +145,21 @@ $(function(){
    // END navigation behaviours ----------------------
 
 
+   $('#jsLoginPanelHook').on('mouseover', '.btn', function(){
+
+      $(this).find('span').velocity("stop", true).velocity({
+         marginRight: '8px'
+      }, 400, 'easeOutSine');
+
+   });
+
+   $('#jsLoginPanelHook').on('mouseout', '.btn', function(){
+
+      $(this).find('span').velocity("stop", true).velocity({
+         marginRight: '0px'
+      }, 250, 'easeOutSine');
+
+   });
 
 
    $('#jsTabsHook').on('click', '.tab-title', function(event){
