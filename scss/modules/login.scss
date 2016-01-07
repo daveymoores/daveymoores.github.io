@@ -49,6 +49,12 @@
    background-size: contain;
    border-radius: 5px;
 
+   a {
+      font-weight: normal;
+      color: palette(core-blue, light);
+      text-decoration: underline;
+   }
+
    @media screen and (max-width: $small-breakpoint) {
       margin-bottom: 50px;
    }
@@ -229,14 +235,13 @@
             }
          }
 
-         &:focus {
-            border-color: palette(core-blue);
-         }
+
 
          input.logininput {
             padding-left: 50px;
             border-color: palette(grey, dark);
             background-color: palette(grey);
+            color: palette(core-blue, light);
 
             &::-webkit-input-placeholder { /* Safari, Chrome and Opera */
               color: scale-color(palette(steel), $lightness: 30%);
@@ -260,6 +265,10 @@
 
             &:placeholder-shown { /* Standard one last! */
               color: scale-color(palette(steel), $lightness: 30%);
+            }
+
+            &:focus {
+               border-color: scale-color(palette(core-blue, light), $lightness: 0%);
             }
          }
       }
