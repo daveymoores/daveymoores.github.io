@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="20px" height="37px" viewBox="0 0 20 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: sketchtool 3.4.4 (395) - http://www.bohemiancoding.com/sketch -->
+    <title>-g-username</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Login" sketch:type="MSArtboardGroup" transform="translate(-352.000000, -414.000000)">
+            <g id="Sign-In" sketch:type="MSLayerGroup" transform="translate(58.000000, 169.000000)">
+                <g id="username-input" transform="translate(272.000000, 229.000000)" sketch:type="MSShapeGroup">
+                    <g id="-g-username" transform="translate(20.000000, 4.000000)">
+                        <rect id="Rectangle-185" fill-opacity="0" fill="#D8D8D8" x="0" y="0" width="24" height="60"></rect>
+                        <g id="Imported-Layers" transform="translate(2.000000, 12.000000)" fill="#6C7A89">
+                            <path d="M16.5664865,7.01459459 C16.5664865,10.64 13.6275676,13.5810811 10,13.5810811 C6.37243243,13.5810811 3.43351351,10.64 3.43351351,7.01459459 C3.43351351,3.38702703 6.37243243,0.445405405 10,0.445405405 C13.6275676,0.445405405 16.5664865,3.38702703 16.5664865,7.01459459" id="Fill-1"></path>
+                            <path d="M19.9724324,22.2172973 C19.9724324,27.3648649 15.512973,36.8518919 10,36.8518919 C4.48702703,36.8518919 0.0275675676,27.3248649 0.0275675676,22.2172973 C0.0275675676,17.1091892 4.48702703,14.7172973 10,14.7172973 C15.512973,14.7172973 19.9724324,17.107027 19.9724324,22.2172973 L19.9724324,22.2172973 Z" id="Fill-2"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

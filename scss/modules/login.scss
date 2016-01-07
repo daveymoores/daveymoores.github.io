@@ -45,7 +45,8 @@
 }
 
 .loginpanel {
-   background-color: palette(white);
+   background: palette(white) url(../img/login-icons/bg-elements.svg) center top no-repeat;
+   background-size: contain;
    border-radius: 5px;
 
    @media screen and (max-width: $small-breakpoint) {
@@ -118,9 +119,10 @@
          width: 100%;
 
          span.arrow {
-            background-color: palette(core-blue, dark);
+            background: transparent url(../img/login-icons/signin-arrow.svg) center center no-repeat;
+            background-size: contain;
             height: 20px;
-            width: 30px;
+            width: 20px;
             float: right;
             margin-top: 5px;
          }
@@ -215,9 +217,16 @@
             left: 0;
             height: 30px;
             width: 30px;
-            background-color: black;
             top: 10px;
             left: 10px;
+            background: transparent url(../img/login-icons/password.svg) center center no-repeat;
+            background-size: contain;
+         }
+
+         &.username {
+            &:before {
+               background-image: url(../img/login-icons/username.svg);
+            }
          }
 
          &:focus {
