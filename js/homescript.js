@@ -569,6 +569,7 @@ $(document).ready(function() {
                });
 
                $('#chevron-down').addClass('rotate');
+               $('#full-chevron-down').addClass('rotate');
 
 
             } else if(k=='up') {
@@ -603,6 +604,7 @@ $(document).ready(function() {
              });
 
              $('#chevron-down').removeClass('rotate');
+             $('#full-chevron-down').removeClass('rotate');
 
 
          } else {

@@ -64,6 +64,14 @@
             font-size: 2.1rem;
          }
 
+         @media screen and (min-width: $large-breakpoint) {
+            font-size: 2rem;
+         }
+
+         @media screen and (max-width: $medium-large-breakpoint) {
+            font-size: 1.8rem;
+         }
+
          @media screen and (max-width: $small-breakpoint) {
             font-size: 1.2rem;
          }
@@ -76,6 +84,14 @@
 
          @media screen and (min-width: $xlarge-breakpoint) {
             font-size: 1rem;
+         }
+
+         @media screen and (min-width: $large-breakpoint) {
+            font-size: 0.95rem;
+         }
+
+         @media screen and (max-width: $medium-large-breakpoint) {
+            font-size: 0.9rem;
          }
 
          @media screen and (max-width: $ipad-breakpoint) {

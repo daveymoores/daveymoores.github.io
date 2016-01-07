@@ -169,7 +169,7 @@
    margin-bottom: -1px;
 
    @media screen and (max-width: $small-breakpoint) {
-      background-color: black;
+      background-color: #107EC1;
       height: 50px;
    }
 
@@ -334,5 +334,34 @@
 
    #jsNavParent .navigation__list li a {
       color: palette(white);
+   }
+}
+
+
+.mobileChevron {
+   position: absolute;
+   width: 100%;
+   bottom: -90px;
+
+   img {
+      width: 30px;
+      background-color: #596676;
+      border-radius: 50%;
+
+      -webkit-transition: 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+      -moz-transition: 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+      -o-transition: 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+      transition: 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+   }
+
+   &.rotate {
+      img {
+         -webkit-transform: rotate(180deg);
+          -moz-transform: rotate(180deg);
+          -o-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+          -webkit-animation: none;
+      }
    }
 }
