@@ -5,6 +5,7 @@ $(document).ready(function() {
        $text = $('#jsTextHook'),
        $body = $('#body'),
        $circle = $('#jsCircleHook'),
+       $footer = $('#jsHomeFooter'),
        easingQuadOut = [ 0.250, 0.460, 0.450, 0.940 ],
        easingQuadIn = [ 0.250, 0.460, 0.450, 0.940 ];
 
@@ -12,36 +13,42 @@ $(document).ready(function() {
       switch (i) {
          case 1:
             $body.css('background-color', '#128ED8');
+            $footer.css('background-color', '#107EC1');
 
             $circle.find('.current').removeClass('current');
             $circle.find('li').eq(0).addClass('current');
             break;
          case 2:
             $body.css('background-color', '#D12F4F');
+            $footer.css('background-color', '#AF1235');
 
             $circle.find('.current').removeClass('current');
             $circle.find('li').eq(1).addClass('current');
             break;
          case 3:
             $body.css('background-color', '#4BABA0');
+            $footer.css('background-color', '#348A7E');
 
             $circle.find('.current').removeClass('current');
             $circle.find('li').eq(2).addClass('current');
             break;
          case 4:
             $body.css('background-color', '#1E4C80');
+            $footer.css('background-color', '#143361');
 
             $circle.find('.current').removeClass('current');
             $circle.find('li').eq(3).addClass('current');
             break;
          case 5:
             $body.css('background-color', '#EC633A');
+            $footer.css('background-color', '#CB4322');
 
             $circle.find('.current').removeClass('current');
             $circle.find('li').eq(4).addClass('current');
             break;
          case 6:
             $body.css('background-color', '#128ED8');
+            $footer.css('background-color', '#107EC1');
 
             $circle.find('.current').removeClass('current');
             $circle.find('li').eq(5).addClass('current');
