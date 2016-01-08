@@ -444,7 +444,7 @@ $(document).ready(function() {
           });
 
           $('#jsAppIconsFirst').velocity("stop", true).velocity({
-             marginTop: '0px',
+             marginTop: '30vh',
              opacity: '0'
           }, 450,  easingQuadOut);
 
@@ -481,7 +481,7 @@ $(document).ready(function() {
 
 
           $('#jsAppIconsFirst').velocity("stop", true).velocity({
-             marginTop: '0px',
+             marginTop: '30vh',
              opacity: '1'
           }, 450,  easingQuadOut);
       }
