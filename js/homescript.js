@@ -739,6 +739,14 @@ $(document).ready(function() {
                   $.fn.fullpage.moveSectionDown();
                }
 
+               if($(this).attr('data-page') == 5) {
+                  if(direction == 'left') {
+                     $('.quoteboxes').slick('slickNext');
+                  } else if(direction == 'right') {
+                     $('.quoteboxes').slick('slickPrev');
+                  }
+               }
+
             }
 
          },
@@ -767,7 +775,7 @@ $(document).ready(function() {
            animateShards($this, index, direction);     //animate corner shards
            cornerElement(index, direction)             //animate coloured corner element
 
-           $("#mobTouch").addClass('active');  //active prevemts double swipe
+           $("#mobTouch").addClass('active').attr('data-page', index);  //active prevemts double swipe
         },
         afterRender: function(){
 
@@ -816,7 +824,6 @@ $(document).ready(function() {
 
      $.fn.fullpage.setKeyboardScrolling(false);
 
-
    }
 
 
@@ -825,6 +832,7 @@ $(document).ready(function() {
    $('.quoteboxes').slick({
      slidesToShow: 3,
      infinite: false,
+     cssEase: 'swing',
      responsive: [
        {
          breakpoint: 600,
