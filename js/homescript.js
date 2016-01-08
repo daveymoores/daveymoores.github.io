@@ -822,4 +822,43 @@ $(document).ready(function() {
 
 
 
+   $('.quoteboxes').slick({
+     slidesToShow: 3,
+     infinite: false,
+     responsive: [
+       {
+         breakpoint: 600,
+         settings: {
+           arrows: false,
+           centerMode: true,
+           centerPadding: '60px',
+           slidesToShow: 1
+        }
+     },
+     {
+        breakpoint: 500,
+        settings: {
+           arrows: false,
+           centerMode: true,
+           centerPadding: '40px',
+           slidesToShow: 1
+        }
+     },
+     {
+        breakpoint: 400,
+        settings: {
+           arrows: false,
+           centerMode: true,
+           centerPadding: '25px',
+           slidesToShow: 1
+        }
+     }
+     ]
+   });
+
+
+
+    $('.quoteboxes').slick('setPosition');
+
+
 });
