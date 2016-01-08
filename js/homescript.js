@@ -576,7 +576,10 @@ $(document).ready(function() {
                });
 
                $('#chevron-down').addClass('rotate');
-               $('#full-chevron-down').addClass('rotate');
+               //$('#full-chevron-down').addClass('rotate');
+               $('#full-chevron-down').velocity({
+                  opacity: 0
+               }, 250);
 
 
             } else if(k=='up') {
@@ -611,7 +614,10 @@ $(document).ready(function() {
              });
 
              $('#chevron-down').removeClass('rotate');
-             $('#full-chevron-down').removeClass('rotate');
+             //$('#full-chevron-down').removeClass('rotate');
+             $('#full-chevron-down').velocity({
+                opacity: 1
+             }, 250);
 
 
          } else {
@@ -668,6 +674,22 @@ $(document).ready(function() {
       }
 
    }
+
+
+
+   //-----pressing down arrow on mobile plus throttle
+   var allowTap = true;
+
+   $("#full-chevron-down").swipe( {
+    tap:function(event, target) {
+      if (!allowTap)
+          return false;
+      allowTap = false;
+      setTimeout(function() { allowTap = true; }, 1400);
+      $.fn.fullpage.moveSectionDown();
+    },
+    threshold:50
+   });
 
 
 
