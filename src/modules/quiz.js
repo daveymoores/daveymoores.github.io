@@ -3,9 +3,6 @@ var $ = require('jquery');
 /******************
 * THINGS TO DO...
 *
-* Change quiz items to selects with 4 answers
-* Update js for selects
-* Return value from answeradd function for a display prototype function
 * Create display function that updates text and img value based on json file
 * Disable inputs  or possibly have a 'doesnt sound like you? Try again'
 ******************/
@@ -32,17 +29,45 @@ Quiz.prototype.quizLoad = function(){
 
 }
 
+//form array
 Quiz.prototype.collectAnswers = function(elem){
+
+    //when checked, add to array
     if(elem.target.checked) {
         var id = $(elem.target).parent().attr('data-q');
         var value = $(elem.target).attr('value');
         var _quizValue = quizUtility.answeradd(id, value);
 
-        this.answerDisplay(_quizValue);
+        //if a return value is found, quiz is complete
+        if(_quizValue != undefined) {
+            this.answerDisplay(_quizValue);
+        }
     }
 }
 
-Quiz.prototype.answerDisplay = function(vale){
+//display result
+Quiz.prototype.answerDisplay = function(value){
+
+    switch (value) {
+        case 21:
+
+        $.getJSON( "./ajax/characters.json", function( data ) {
+            var items = [];
+
+            $.each( data, function( key, val ) {
+                items.push( "<li id='" + key + "'>" + val + "</li>" );
+            });
+
+            $( "<ul/>", {
+            "class": "my-new-list",
+            html: items.join( "" )
+            }).appendTo( "body" );
+        });
+
+            break;
+        default:
+
+    }
 
 }
 
@@ -57,7 +82,6 @@ var quizUtility = {
 
         if(Object.keys(quizUtility.answers).length == 6) {
             return 21;
-            $('.quiz__answerdisplay').show();
         }
     }
 
