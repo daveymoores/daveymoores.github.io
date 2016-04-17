@@ -51,7 +51,7 @@ Quiz.prototype.answerDisplay = function(value){
     switch (value) {
         case 21:
 
-        $.getJSON( "./ajax/characters.json", function( data ) {
+        $.getJSON( "dist/build/ajax/characters.json", function( data ) {
             var items = [];
 
             $.each( data, function( key, val ) {
