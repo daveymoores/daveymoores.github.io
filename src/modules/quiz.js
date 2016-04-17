@@ -1,4 +1,5 @@
 var $ = require('jquery');
+var displayChars = require('../modules/characters');
 
 /******************
 * THINGS TO DO...
@@ -13,7 +14,6 @@ function Quiz(node){
     this.$window = $(window);
 
     this.$window.on('load', $.proxy(this.quizLoad, this));
-
     $("input[type='radio']").change($.proxy(this.collectAnswers, this));
 
 }
@@ -48,26 +48,7 @@ Quiz.prototype.collectAnswers = function(elem){
 //display result
 Quiz.prototype.answerDisplay = function(value){
 
-    switch (value) {
-        case 21:
-
-        $.getJSON( "dist/build/ajax/characters.json", function( data ) {
-            var items = [];
-
-            $.each( data, function( key, val ) {
-                items.push( "<li id='" + key + "'>" + val + "</li>" );
-            });
-
-            $( "<ul/>", {
-            "class": "my-new-list",
-            html: items.join( "" )
-            }).appendTo( "body" );
-        });
-
-            break;
-        default:
-
-    }
+    var showResult = new displayChars(value);
 
 }
 
