@@ -1,5 +1,6 @@
 .DS_Store
 node_modules/
-psds/
+artwork/*
+designs/*
 dist/build/*
 dist/build/css/*
