@@ -1,0 +1,22 @@
+{
+   "char_0":{
+      "class":"DEFENSE",
+      "url":"dist/build/img/defense-characters.png",
+      "description":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam onummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Ut wisi enim ad minim veniam, quis nostrud exerci tation. Ut wisi enim ad minim veniam, quis nostrud exerci tation."
+   },
+   "char_1":{
+      "class":"OFFENSE",
+      "url":"dist/build/img/offense-characters.png",
+      "description":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam onummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Ut wisi enim ad minim veniam, quis nostrud exerci tation. Ut wisi enim ad minim veniam, quis nostrud exerci tation."
+   },
+   "char_2":{
+      "class":"Tank",
+      "url":"https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150",
+      "description":"Lorem ipsum dolor sit amet"
+   },
+   "char_3":{
+      "class":"Support",
+      "url":"https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150",
+      "description":"Lorem ipsum dolor sit amet"
+   }
+}
