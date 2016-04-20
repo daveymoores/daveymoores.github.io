@@ -41,6 +41,8 @@ displayCharacters.prototype.switch = function(value){
 
      }).done(function() {
 
+         alert('>>>>>>>> DONE!!!!!');
+
          $('#display').find('.animate').each(function(){
              var $this = $(this);
 
