@@ -12,6 +12,10 @@
   font-weight: normal;
   font-style: normal; }
 
+body {
+  background-color: #101012;
+  color: white; }
+
 .clearfix:after {
   visibility: hidden;
   display: block;
@@ -32,7 +36,7 @@
 
 /* close commented backslash hack */
 .quiz__answerdisplay {
-  width: 980px;
+  width: 810px;
   margin: auto;
   height: 415px;
   overflow: hidden;

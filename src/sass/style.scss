@@ -23,6 +23,11 @@
 }
 
 
+body {
+    background-color: #101012;
+    color: white;
+}
+
 .clearfix:after {
      visibility: hidden;
      display: block;
@@ -39,7 +44,7 @@
 
 
 .quiz__answerdisplay {
-    width: 980px;
+    width: 810px;
     margin: auto;
     height: 415px;
     overflow: hidden;
