@@ -16,6 +16,9 @@ function Quiz(node){
     this.$window.on('load', $.proxy(this.quizLoad, this));
     $("input[type='radio']").change($.proxy(this.collectAnswers, this));
 
+    this.$submit = $('#submit');
+    this.$submit.on('click', $.proxy(this.submitAnswers, this));
+
 }
 
 Quiz.prototype.CLASSES = {
@@ -34,15 +37,19 @@ Quiz.prototype.collectAnswers = function(elem){
 
     //when checked, add to array
     if(elem.target.checked) {
-        var id = $(elem.target).parent().attr('data-q');
-        var value = $(elem.target).attr('value');
-        var _quizValue = quizUtility.answeradd(id, value);
-
-        //if a return value is found, quiz is complete
-        if(_quizValue != undefined) {
-            this.answerDisplay(_quizValue);
-        }
+        var value = $(elem.target).attr('data-char');
+        quizUtility.answeradd(value);
     }
+}
+
+Quiz.prototype.submitAnswers = function(){
+
+    var arr = Object.keys( quizUtility.answers ).map(function ( key ) { return quizUtility.answers[key]; });
+    var max = Math.max.apply( null, arr );
+    var value = arr.indexOf(max);
+
+    this.answerDisplay(value);
+
 }
 
 //display result
@@ -54,14 +61,10 @@ Quiz.prototype.answerDisplay = function(value){
 
 var quizUtility = {
 
-    answers : {},
+    answers : { a: 0, b: 0, c: 0, d: 0 },
 
-    answeradd : function(id, value){
-        quizUtility.answers[id] = value;
-
-        if(Object.keys(quizUtility.answers).length == 6) {
-            return 21;
-        }
+    answeradd : function(value){
+        quizUtility.answers[value]++;
     }
 
 }

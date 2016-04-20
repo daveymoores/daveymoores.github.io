@@ -16,38 +16,45 @@ displayCharacters.prototype.switch = function(value){
         $class = this.$class,
         $desc = this.$desc;
 
+    $.getJSON( "https://daveymoores.github.io/characters.json", function( data ) {
 
-    switch (value) {
-        case 21:
+        var json;
 
-            $.getJSON( "dist/build/ajax/characters.json", function( data ) {
-
-                var json = data.char_1;
-
-                $img.attr('src', json.url);
-                $class.text(json.class);
-                $desc.text(json.description);
-
-             }).done(function() {
-
-                 $('#display').find('.animate').each(function(){
-                     var $this = $(this);
-
-                     if($this.hasClass('quiz__answerdisplay--img') == true) {
-                         setTimeout(function(){
-                             $this.addClass('active');
-                         }, 300);
-                     } else {
-                         $this.addClass('active');
-                     }
-                 });
-
-              });
-
+        switch (value) {
+        case 0:
+            json = data.char_0;
             break;
-        default:
+        case 1:
+            json = data.char_1;
+            break;
+        case 2:
+            json = data.char_2;
+            break;
+        case 3:
+            json = data.char_3;
+            break;
+        }
 
-    }
+        $img.attr('src', json.url);
+        $class.text(json.class);
+        $desc.text(json.description);
+
+     }).done(function() {
+
+         $('#display').find('.animate').each(function(){
+             var $this = $(this);
+
+             if($this.hasClass('quiz__answerdisplay--img') == true) {
+                 setTimeout(function(){
+                     $this.addClass('active');
+                 }, 300);
+             } else {
+                 $this.addClass('active');
+             }
+         });
+
+      });
+
 
 }
 
