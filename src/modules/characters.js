@@ -16,6 +16,8 @@ displayCharacters.prototype.switch = function(value){
         $class = this.$class,
         $desc = this.$desc;
 
+
+                 alert('>>>>>>>> DONE!!!!!');
     $.getJSON( "dist/build/ajax/characters.json", function( data ) {
 
         var json;
@@ -41,7 +43,6 @@ displayCharacters.prototype.switch = function(value){
 
      }).done(function() {
 
-         alert('>>>>>>>> DONE!!!!!');
 
          $('#display').find('.animate').each(function(){
              var $this = $(this);
