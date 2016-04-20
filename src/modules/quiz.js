@@ -8,6 +8,9 @@ var displayChars = require('../modules/characters');
 * Disable inputs  or possibly have a 'doesnt sound like you? Try again'
 ******************/
 
+
+alert('>>>>>>>> DONE!!!!!');
+
 function Quiz(node){
 
     this.$node = $(node);
