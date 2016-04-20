@@ -59,8 +59,6 @@ var quizUtility = {
     answeradd : function(id, value){
         quizUtility.answers[id] = value;
 
-        console.log(quizUtility.answers);
-
         if(Object.keys(quizUtility.answers).length == 6) {
             return 21;
         }

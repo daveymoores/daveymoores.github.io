@@ -28,7 +28,21 @@ displayCharacters.prototype.switch = function(value){
                 $class.text(json.class);
                 $desc.text(json.description);
 
-            });
+             }).done(function() {
+
+                 $('#display').find('.animate').each(function(){
+                     var $this = $(this);
+
+                     if($this.hasClass('quiz__answerdisplay--img') == true) {
+                         setTimeout(function(){
+                             $this.addClass('active');
+                         }, 300);
+                     } else {
+                         $this.addClass('active');
+                     }
+                 });
+
+              });
 
             break;
         default:
