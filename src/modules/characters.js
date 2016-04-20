@@ -16,7 +16,7 @@ displayCharacters.prototype.switch = function(value){
         $class = this.$class,
         $desc = this.$desc;
 
-    $.getJSON( "dist/build/ajax/characters.json", function( data ) {
+    $.getJSON( "https://daveymoores.github.io/dist/build/ajax/characters.json", function( data ) {
 
         var json;
 

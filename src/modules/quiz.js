@@ -9,8 +9,6 @@ var displayChars = require('../modules/characters');
 ******************/
 
 
-alert('>>>>>>>> DONE!!!!!');
-
 function Quiz(node){
 
     this.$node = $(node);
