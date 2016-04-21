@@ -43,11 +43,14 @@ body {
 .quiz {
   padding: 40px;
   margin-bottom: 40px; }
+  @media screen and (max-width: 768px) {
+    .quiz {
+      padding: 15px; } }
 
 .quiz__answerdisplay {
   width: 100%;
   margin: auto;
-  height: 125px;
+  height: auto;
   overflow: hidden;
   position: relative;
   border-top: 8px solid #f09208;
@@ -115,6 +118,14 @@ body {
   .quiz__item:last-child {
     padding-left: 1.5%;
     padding-right: 0; }
+    @media screen and (max-width: 768px) {
+      .quiz__item:last-child {
+        width: 100%;
+        padding: 0 0 20px; } }
+  @media screen and (max-width: 768px) {
+    .quiz__item {
+      width: 100%;
+      padding: 0 0 20px; } }
   .quiz__item > label {
     font-family: 'bignoodletitlingregular';
     font-size: 25px;
@@ -177,7 +188,12 @@ body {
 .radio__container {
   width: 50%;
   float: left;
-  margin-top: 10px; }
+  margin-top: 10px;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out; }
+  .radio__container.disable {
+    opacity: 0.5; }
 
 input[type=radio]:not(old) {
   width: 2em;

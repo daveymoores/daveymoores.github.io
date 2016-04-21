@@ -1,7 +1,12 @@
 .radio__container {
   width: 50%;
   float: left;
-  margin-top: 10px; }
+  margin-top: 10px;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out; }
+  .radio__container.disable {
+    opacity: 0.5; }
 
 input[type=radio]:not(old) {
   width: 2em;

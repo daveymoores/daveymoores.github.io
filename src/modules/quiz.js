@@ -43,7 +43,11 @@ Quiz.prototype.collectAnswers = function(elem){
         $(elem.target).parent().addClass('active');
     }
 
-    $(elem.target).parent().prev().find('.radio__container').css('opacity', '0.5');
+    $(elem.target).parent().parent().find('.radio__container').each(function(){
+        if($(this).hasClass('active') != true) {
+            $(this).addClass('disable').children().attr('disabled', 'disabled');
+        }
+    });
 }
 
 Quiz.prototype.submitAnswers = function(){

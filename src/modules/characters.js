@@ -5,6 +5,7 @@ function displayCharacters(value){
     this.$img = $('#display').find('.' + this.CLASSES.quiz + '--img');
     this.$class = $('#display').find('.' + this.CLASSES.quiz + '--class');
     this.$desc = $('#display').find('.' + this.CLASSES.quiz + '--description');
+    this.$questions = $('#submittext');
 
     this.switch(value);
 
@@ -14,7 +15,8 @@ displayCharacters.prototype.switch = function(value){
 
     var $img = this.$img,
         $class = this.$class,
-        $desc = this.$desc;
+        $desc = this.$desc,
+        $qs = this.$questions;
 
     $.getJSON( "https://daveymoores.github.io/dist/build/ajax/characters.json", function( data ) {
 
@@ -41,6 +43,8 @@ displayCharacters.prototype.switch = function(value){
 
      }).done(function() {
 
+         $qs.hide();
+         $('#display').css('height', '415');
 
          $('#display').find('.animate').each(function(){
              var $this = $(this);
