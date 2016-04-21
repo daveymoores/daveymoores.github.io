@@ -1,0 +1,161 @@
+.quiz {
+    padding: 40px;
+    margin-bottom: 40px;
+}
+
+
+.quiz__answerdisplay {
+    width: 100%;
+    margin: auto;
+    height: 125px;
+    overflow: hidden;
+    position: relative;
+    border-top: 8px solid #f09208;
+
+    background: #cececf; /* Old browsers */
+    background: -moz-linear-gradient(45deg,  #cececf 0%, #e3e4e6 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,  #cececf 0%,#e3e4e6 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  #cececf 0%,#e3e4e6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cececf', endColorstr='#e3e4e6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+    &--img {
+        width: 600px;
+        position: absolute;
+        left: -100px;
+        bottom: 0;
+
+        visibility: hidden;
+        opacity: 0;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    &--text {
+        float: right;
+        width: 100%;
+    }
+
+    &--textwrapper {
+        background-color: #a4a4a4;
+
+        visibility: hidden;
+        opacity: 0;
+        -webkit-transition: opacity 0.3s ease-in-out;
+        -moz-transition: opacity 0.3s ease-in-out;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    &--class {
+        font-family: 'bignoodletitlingoblique';
+        font-size: 100px;
+        text-align: right;
+        padding-right: 20px;
+        margin-top: 20px;
+
+        visibility: hidden;
+        opacity: 0;
+        -webkit-transition: opacity 0.3s ease-in-out;
+        -moz-transition: opacity 0.3s ease-in-out;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    &--description {
+        font-size: 18px;
+        font-family: "futura-pt",sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        width: 400px;
+        float: right;
+        text-align: right;
+        padding: 20px;
+    }
+
+
+    .quiz__answerdisplay--img, .quiz__answerdisplay--class, .quiz__answerdisplay--textwrapper {
+        &.active {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    .quiz__answerdisplay--img {
+        &.active {
+            left: -50px;
+        }
+    }
+}
+
+.quiz__item {
+    width: 48.5%;
+    float: left;
+    padding-bottom: 30px;
+    padding-right: 1.5%;
+
+    &:last-child {
+        padding-left: 1.5%;
+        padding-right: 0;
+    }
+
+    & > label {
+        font-family: 'bignoodletitlingregular';
+        font-size: 25px;
+        letter-spacing: 1px;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    & > div {
+        label {
+            font-family: "futura-pt",sans-serif;
+            font-style: italic;
+            font-weight: 700;
+            font-size: 16px;
+            display: block;
+        }
+    }
+}
+
+.quiz__row {
+    width: 100%;
+}
+
+.quiz__number {
+    font-family: 'bignoodletitlingoblique';
+    padding: 10px 8px 0px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+
+    background: -moz-linear-gradient(left,  rgba(240,165,13,1) 0%, rgba(240,146,8,0.89) 10%, rgba(203,91,41,0.3) 62%, rgba(170,104,41,0) 89%, rgba(169,104,41,0) 90%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(240,165,13,1) 0%,rgba(240,146,8,0.89) 10%,rgba(203,91,41,0.3) 62%,rgba(170,104,41,0) 89%,rgba(169,104,41,0) 90%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(240,165,13,1) 0%,rgba(240,146,8,0.89) 10%,rgba(203,91,41,0.3) 62%,rgba(170,104,41,0) 89%,rgba(169,104,41,0) 90%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0a50d', endColorstr='#00a96829',GradientType=1 ); /* IE6-9 */
+
+
+    font-size: 24px;
+    width: 140px;
+}
+
+.quiz__submittext {
+    padding: 20px 40px;
+
+    p {
+        float: left;
+        margin: 0px;
+        font-family: "futura-pt",sans-serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 20px;
+        width: 55%;
+        padding-right: 60px;
+        color: #101012;
+    }
+
+    button {
+        float: left;
+        margin-top: 10px;
+    }
+}

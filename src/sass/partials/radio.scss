@@ -1,0 +1,43 @@
+.radio__container {
+    width: 50%;
+    float: left;
+    margin-top: 10px;
+}
+
+input[type=radio]:not(old){
+    width     : 2em;
+    margin    : 0;
+    padding   : 0;
+    font-size : 1em;
+    opacity   : 0;
+}
+
+input[type=radio]:not(old) + label{
+    display      : inline-block;
+    margin-left  : -2em;
+    line-height  : 1.5em;
+}
+
+input[type=radio]:not(old) + label > span{
+    display: block;
+    float: left;
+    margin-right: 10px;
+    height: 18px;
+    width: 18px;
+    border: 3px solid #f09208;
+    border-radius: 50%;
+}
+
+input[type=radio]:not(old):checked + label > span{
+    background-color: black;
+}
+
+input[type=radio]:not(old):checked + label > span > span{
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #f09208;
+    margin-top: 4px;
+    margin-left: 4px;
+}

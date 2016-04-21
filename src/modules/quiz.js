@@ -40,7 +40,10 @@ Quiz.prototype.collectAnswers = function(elem){
     if(elem.target.checked) {
         var value = $(elem.target).attr('data-char');
         quizUtility.answeradd(value);
+        $(elem.target).parent().addClass('active');
     }
+
+    $(elem.target).parent().prev().find('.radio__container').css('opacity', '0.5');
 }
 
 Quiz.prototype.submitAnswers = function(){
