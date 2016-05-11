@@ -288,4 +288,4 @@ input[type=radio]:not(old):checked + label > span > span {
     width: 75%; }
 
 .ss__comp {
-  background: white url(../dist/build/img/comp_prizing-bg.jpg) top left no-repeat; }
+  background: white url(../img/comp_prizing-bg.jpg) top left no-repeat; }
