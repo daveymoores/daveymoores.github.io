@@ -1,7 +1,12 @@
 .ss__comp {
     background: white url(../img/comp_prizing-bg.jpg) top left no-repeat;
+    background-size: 100%;
     border-radius: 15px;
     padding: 15px;
+
+    img {
+        width: 100%;
+    }
 }
 
 .ss__form {
@@ -13,10 +18,18 @@
     display: block;
 }
 
-.sublabel {
+.field_block .sublabel {
     display: none;
 }
 
 .main_field_label {
     display: none;
+}
+
+.horizontal_container .field_block {
+    margin: 0;
+}
+
+.field_block input, .field_block textarea {
+    width: 100%;
 }
