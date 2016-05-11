@@ -1,0 +1,29 @@
+.hero {
+    padding: 0 40px;
+    height: 500px;
+    background-size: 100%;
+    padding-top: 50px;
+
+    &__imgcont {
+        width: 100%;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    &__logo {
+        width: 240px;
+        float: left;
+        margin-left: 100px;
+    }
+
+    &__sublogo {
+        width: 360px;
+        float: left;
+    }
+
+    p {
+        font-family: 'bignoodletitlingregular';
+        font-size: 18px;
+        width: 75%;
+    }
+}

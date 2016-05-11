@@ -1,0 +1,20 @@
+.hero {
+  padding: 0 40px;
+  height: 500px;
+  background-size: 100%;
+  padding-top: 50px; }
+  .hero__imgcont {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px; }
+  .hero__logo {
+    width: 240px;
+    float: left;
+    margin-left: 100px; }
+  .hero__sublogo {
+    width: 360px;
+    float: left; }
+  .hero p {
+    font-family: 'bignoodletitlingregular';
+    font-size: 18px;
+    width: 75%; }

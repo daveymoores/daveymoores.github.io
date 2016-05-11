@@ -178,10 +178,16 @@ body {
     float: left;
     margin-top: 10px; }
 
+.quiz__radios {
+  display: table;
+  table-layout: fixed;
+  width: 100%; }
+
 .pagewrapper {
   width: 960px;
   margin: auto;
-  background-color: #101012;
+  background: #101012 url(../img/header-img.jpg) top center no-repeat;
+  background-size: 100%;
   height: 100%; }
   @media screen and (max-width: 960px) {
     .pagewrapper {
@@ -190,6 +196,7 @@ body {
 .radio__container {
   width: 50%;
   float: left;
+  display: block;
   margin-top: 10px;
   transition: opacity .25s ease-in-out;
   -moz-transition: opacity .25s ease-in-out;
@@ -217,6 +224,12 @@ input[type=radio]:not(old) + label > span {
   width: 18px;
   border: 3px solid #f09208;
   border-radius: 50%; }
+  input[type=radio]:not(old) + label > span.copy {
+    padding-left: 25px;
+    width: auto;
+    height: auto;
+    border: none;
+    border-radius: auto; }
 
 input[type=radio]:not(old):checked + label > span {
   background-color: black; }
@@ -252,3 +265,24 @@ input[type=radio]:not(old):checked + label > span > span {
   padding: 15px 30px;
   letter-spacing: 1px;
   cursor: pointer; }
+
+.hero {
+  padding: 0 40px;
+  height: 500px;
+  background-size: 100%;
+  padding-top: 50px; }
+  .hero__imgcont {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px; }
+  .hero__logo {
+    width: 240px;
+    float: left;
+    margin-left: 100px; }
+  .hero__sublogo {
+    width: 360px;
+    float: left; }
+  .hero p {
+    font-family: 'bignoodletitlingregular';
+    font-size: 18px;
+    width: 75%; }
