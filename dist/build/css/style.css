@@ -286,3 +286,6 @@ input[type=radio]:not(old):checked + label > span > span {
     font-family: 'bignoodletitlingregular';
     font-size: 18px;
     width: 75%; }
+
+.ss__comp {
+  background: white url(../dist/build/img/comp_prizing-bg.jpg) top left no-repeat; }
