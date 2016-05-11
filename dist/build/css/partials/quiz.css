@@ -89,13 +89,15 @@
     font-size: 25px;
     letter-spacing: 1px;
     display: block;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    color: white; }
   .quiz__item > div label {
     font-family: "futura-pt",sans-serif;
     font-style: italic;
     font-weight: 700;
     font-size: 16px;
-    display: block; }
+    display: block;
+    color: white; }
 
 .quiz__row {
   width: 100%;
