@@ -12,7 +12,7 @@
   font-weight: normal;
   font-style: normal; }
 
-body.body {
+body {
   background: #939494 url("../img/shortstack_bg.jpg") top left repeat-x;
   color: white;
   margin: 0;
@@ -139,7 +139,8 @@ body.body {
     display: block; }
 
 .quiz__row {
-  width: 100%; }
+  width: 100%;
+  color: white; }
 
 .quiz__number {
   font-family: 'bignoodletitlingoblique';

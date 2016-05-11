@@ -98,7 +98,8 @@
     display: block; }
 
 .quiz__row {
-  width: 100%; }
+  width: 100%;
+  color: white; }
 
 .quiz__number {
   font-family: 'bignoodletitlingoblique';
