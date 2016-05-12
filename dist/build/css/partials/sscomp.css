@@ -24,11 +24,11 @@
 .ss_layout > .ss_layout_column {
   padding: 15px; }
 
-.horizontal_container .field_block {
+.horizontal_container .field_block, .email_field_block .field_block {
   width: 94%;
   display: block;
   position: relative; }
-  .horizontal_container .field_block input {
+  .horizontal_container .field_block input, .email_field_block .field_block input {
     background-color: #e3e4e5;
     height: 35px;
     border: none;
