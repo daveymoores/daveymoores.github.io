@@ -21,12 +21,11 @@ input[type=radio]:not(old){
 }
 
 input[type=radio]:not(old) + label{
-    display      : inline-block;
-    margin-left  : -2em;
+    display      : table;
     line-height  : 1.5em;
 }
 
-input[type=radio]:not(old) + label > span{
+input[type=radio]:not(old) + label > span > span {
     display: block;
     float: left;
     margin-right: 10px;
@@ -34,14 +33,16 @@ input[type=radio]:not(old) + label > span{
     width: 18px;
     border: 3px solid #f09208;
     border-radius: 50%;
+}
 
-    &.copy {
-        padding-left: 25px;
-        width: auto;
-        height: auto;
-        border: none;
-        border-radius: auto;
-    }
+.copy, .radio__wrapper {
+    //padding-left: 25px;
+    width: auto!important;
+    height: auto!important;
+    border: none!important;
+    border-radius: auto!important;
+    display: table-cell;
+    vertical-align: top;
 }
 
 input[type=radio]:not(old):checked + label > span{

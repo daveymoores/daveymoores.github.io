@@ -70,9 +70,9 @@
 
 .quiz__item {
   width: 48.5%;
-  float: left;
   padding-bottom: 30px;
-  padding-right: 1.5%; }
+  padding-right: 1.5%;
+  display: table-cell; }
   .quiz__item:last-child {
     padding-left: 1.5%;
     padding-right: 0; }
@@ -101,7 +101,8 @@
 
 .quiz__row {
   width: 100%;
-  color: white; }
+  color: white;
+  display: table; }
 
 .quiz__number {
   font-family: 'bignoodletitlingoblique';

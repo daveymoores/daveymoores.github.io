@@ -114,9 +114,9 @@ body.desktop {
 
 .quiz__item {
   width: 48.5%;
-  float: left;
   padding-bottom: 30px;
-  padding-right: 1.5%; }
+  padding-right: 1.5%;
+  display: table-cell; }
   .quiz__item:last-child {
     padding-left: 1.5%;
     padding-right: 0; }
@@ -145,7 +145,8 @@ body.desktop {
 
 .quiz__row {
   width: 100%;
-  color: white; }
+  color: white;
+  display: table; }
 
 .quiz__number {
   font-family: 'bignoodletitlingoblique';
@@ -215,11 +216,10 @@ input[type=radio]:not(old) {
   opacity: 0; }
 
 input[type=radio]:not(old) + label {
-  display: inline-block;
-  margin-left: -2em;
+  display: table;
   line-height: 1.5em; }
 
-input[type=radio]:not(old) + label > span {
+input[type=radio]:not(old) + label > span > span {
   display: block;
   float: left;
   margin-right: 10px;
@@ -227,12 +227,14 @@ input[type=radio]:not(old) + label > span {
   width: 18px;
   border: 3px solid #f09208;
   border-radius: 50%; }
-  input[type=radio]:not(old) + label > span.copy {
-    padding-left: 25px;
-    width: auto;
-    height: auto;
-    border: none;
-    border-radius: auto; }
+
+.copy, .radio__wrapper {
+  width: auto !important;
+  height: auto !important;
+  border: none !important;
+  border-radius: auto !important;
+  display: table-cell;
+  vertical-align: top; }
 
 input[type=radio]:not(old):checked + label > span {
   background-color: black; }
