@@ -310,11 +310,34 @@ input[type=radio]:not(old):checked + label > span > span {
 
 .field_block {
   width: 100%;
-  display: block; }
+  display: block;
+  position: relative; }
   .field_block input {
     background-color: #e3e4e5;
     height: 35px;
-    border: none; }
+    border: none;
+    font-family: "futura-pt",sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 0 10px; }
+    .field_block input::before {
+      content: "First Name"; }
+
+.main_field_label {
+  font-family: "futura-pt",sans-serif;
+  font-style: italic;
+  font-weight: 700; }
+
+.field_block .sublabel {
+  position: absolute;
+  top: -22px;
+  font-family: "futura-pt",sans-serif;
+  font-style: italic;
+  font-weight: 700; }
+
+.main_field_label {
+  display: none; }
 
 .horizontal_container .field_block {
   margin: 0; }
