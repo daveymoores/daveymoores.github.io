@@ -21,11 +21,14 @@
 #form_last_name_block {
   margin-top: 35px; }
 
-.field_block {
-  width: 100%;
+.ss_layout > .ss_layout_column {
+  padding: 15px; }
+
+.horizontal_container .field_block {
+  width: 94%;
   display: block;
   position: relative; }
-  .field_block input {
+  .horizontal_container .field_block input {
     background-color: #e3e4e5;
     height: 35px;
     border: none;
@@ -34,6 +37,9 @@
     font-weight: 400;
     font-size: 16px;
     padding: 0 10px; }
+
+.field_block input, .field_block textarea {
+  width: 94%; }
 
 .main_field_label {
   font-family: "futura-pt",sans-serif;

@@ -29,8 +29,12 @@
     margin-top: 35px;
 }
 
-.field_block {
-    width: 100%;
+.ss_layout>.ss_layout_column {
+    padding: 15px;
+}
+
+.horizontal_container .field_block {
+    width: 94%;
     display: block;
     position: relative;
 
@@ -44,6 +48,10 @@
         font-size: 16px;
         padding: 0 10px;
     }
+}
+
+.field_block input, .field_block textarea {
+    width: 94%;
 }
 
 .main_field_label {
