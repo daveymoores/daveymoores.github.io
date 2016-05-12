@@ -5,3 +5,6 @@ body {
   border-top: 10px solid #f09208;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+
+body.desktop {
+  background-color: #fff; }
