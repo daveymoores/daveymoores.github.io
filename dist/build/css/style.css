@@ -243,7 +243,7 @@ input[type=radio]:not(old):checked + label > span > span {
   margin-top: 4px;
   margin-left: 4px; }
 
-.btn, .form_submit.ss_btn {
+.btn, .form_submit.ss_btn, .btn:hover, .form_submit.ss_btn:hover {
   border-radius: 3px;
   background: #0081d8;
   /* Old browsers */
@@ -315,12 +315,6 @@ input[type=radio]:not(old):checked + label > span > span {
     background-color: #e3e4e5;
     height: 35px;
     border: none; }
-
-.field_block .sublabel {
-  display: none; }
-
-.main_field_label {
-  display: none; }
 
 .horizontal_container .field_block {
   margin: 0; }

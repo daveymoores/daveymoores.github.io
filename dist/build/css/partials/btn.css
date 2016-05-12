@@ -1,4 +1,4 @@
-.btn, .form_submit.ss_btn {
+.btn, .form_submit.ss_btn, .btn:hover, .form_submit.ss_btn:hover {
   border-radius: 3px;
   background: #0081d8;
   /* Old browsers */
