@@ -2,7 +2,7 @@
   padding: 20px 40px; }
   @media screen and (max-width: 768px) {
     .quiz {
-      padding: 15px; } }
+      padding: 0 15px 15px; } }
 
 .quiz__answerdisplay {
   width: 100%;
@@ -75,17 +75,22 @@
   padding-bottom: 30px;
   padding-right: 1.5%;
   display: table-cell; }
+  @media screen and (max-width: 768px) {
+    .quiz__item {
+      display: block;
+      width: 100%;
+      padding: 0;
+      float: left;
+      margin-top: 30px; } }
   .quiz__item:last-child {
     padding-left: 1.5%;
     padding-right: 0; }
     @media screen and (max-width: 768px) {
       .quiz__item:last-child {
+        display: block;
         width: 100%;
-        padding: 0 0 20px; } }
-  @media screen and (max-width: 768px) {
-    .quiz__item {
-      width: 100%;
-      padding: 0 0 20px; } }
+        padding: 0;
+        float: left; } }
   .quiz__item > label {
     font-family: 'bignoodletitlingregular';
     font-size: 25px;
@@ -105,6 +110,11 @@
   width: 100%;
   color: white;
   display: table; }
+  @media screen and (max-width: 768px) {
+    .quiz__row {
+      display: block;
+      width: 100%;
+      padding: 0; } }
 
 .quiz__number {
   font-family: 'bignoodletitlingoblique';

@@ -2,10 +2,13 @@
   width: 50%;
   float: left;
   display: block;
-  margin-top: 10px;
+  margin-top: 0px;
   transition: opacity .25s ease-in-out;
   -moz-transition: opacity .25s ease-in-out;
   -webkit-transition: opacity .25s ease-in-out; }
+  @media screen and (max-width: 465px) {
+    .radio__container {
+      width: 100%; } }
   .radio__container.disable {
     opacity: 0.5; }
 

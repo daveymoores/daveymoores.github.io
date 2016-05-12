@@ -49,7 +49,7 @@ body #wrapper {
   padding: 20px 40px; }
   @media screen and (max-width: 768px) {
     .quiz {
-      padding: 15px; } }
+      padding: 0 15px 15px; } }
 
 .quiz__answerdisplay {
   width: 100%;
@@ -122,17 +122,22 @@ body #wrapper {
   padding-bottom: 30px;
   padding-right: 1.5%;
   display: table-cell; }
+  @media screen and (max-width: 768px) {
+    .quiz__item {
+      display: block;
+      width: 100%;
+      padding: 0;
+      float: left;
+      margin-top: 30px; } }
   .quiz__item:last-child {
     padding-left: 1.5%;
     padding-right: 0; }
     @media screen and (max-width: 768px) {
       .quiz__item:last-child {
+        display: block;
         width: 100%;
-        padding: 0 0 20px; } }
-  @media screen and (max-width: 768px) {
-    .quiz__item {
-      width: 100%;
-      padding: 0 0 20px; } }
+        padding: 0;
+        float: left; } }
   .quiz__item > label {
     font-family: 'bignoodletitlingregular';
     font-size: 25px;
@@ -152,6 +157,11 @@ body #wrapper {
   width: 100%;
   color: white;
   display: table; }
+  @media screen and (max-width: 768px) {
+    .quiz__row {
+      display: block;
+      width: 100%;
+      padding: 0; } }
 
 .quiz__number {
   font-family: 'bignoodletitlingoblique';
@@ -206,10 +216,13 @@ body #wrapper {
   width: 50%;
   float: left;
   display: block;
-  margin-top: 10px;
+  margin-top: 0px;
   transition: opacity .25s ease-in-out;
   -moz-transition: opacity .25s ease-in-out;
   -webkit-transition: opacity .25s ease-in-out; }
+  @media screen and (max-width: 465px) {
+    .radio__container {
+      width: 100%; } }
   .radio__container.disable {
     opacity: 0.5; }
 
@@ -285,22 +298,35 @@ input[type=radio]:not(old):checked + label > span > span {
   height: auto;
   background-size: 100%;
   padding-top: 50px; }
+  @media screen and (max-width: 768px) {
+    .hero {
+      padding: 30px 15px 0px; } }
   .hero__imgcont {
     width: 100%;
     display: block;
     margin-bottom: 10px; }
   .hero__logo {
     width: 240px;
-    float: left;
     margin-left: 100px; }
+    @media screen and (max-width: 485px) {
+      .hero__logo {
+        float: none;
+        margin: auto;
+        display: block; } }
   .hero__sublogo {
     width: 360px;
     float: left; }
+    @media screen and (max-width: 405px) {
+      .hero__sublogo {
+        width: 100%; } }
   .hero p {
     font-family: 'bignoodletitlingregular';
     font-size: 18px;
     width: 75%;
     color: white; }
+    @media screen and (max-width: 640px) {
+      .hero p {
+        width: 100%; } }
 
 .ss__comp {
   background: white url(../img/comp_prizing-bg.jpg) top left no-repeat;

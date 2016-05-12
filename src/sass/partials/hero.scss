@@ -4,6 +4,10 @@
     background-size: 100%;
     padding-top: 50px;
 
+    @media screen and (max-width: 768px) {
+        padding: 30px 15px 0px;
+    }
+
     &__imgcont {
         width: 100%;
         display: block;
@@ -12,13 +16,22 @@
 
     &__logo {
         width: 240px;
-        float: left;
         margin-left: 100px;
+
+        @media screen and (max-width: 485px) {
+            float: none;
+            margin: auto;
+            display: block;
+        }
     }
 
     &__sublogo {
         width: 360px;
         float: left;
+
+        @media screen and (max-width: 405px) {
+            width: 100%;
+        }
     }
 
     p {
@@ -26,5 +39,9 @@
         font-size: 18px;
         width: 75%;
         color: white;
+
+        @media screen and (max-width: 640px) {
+            width: 100%;
+        }
     }
 }

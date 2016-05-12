@@ -2,7 +2,7 @@
     padding: 20px 40px;
 
     @media screen and (max-width: 768px) {
-        padding: 15px;
+        padding: 0 15px 15px;
     }
 }
 
@@ -99,20 +99,26 @@
     padding-right: 1.5%;
     display: table-cell;
 
+    @media screen and (max-width: 768px) {
+        display: block;
+        width: 100%;
+        padding: 0;
+        float: left;
+        margin-top: 30px;
+    }
+
     &:last-child {
         padding-left: 1.5%;
         padding-right: 0;
 
         @media screen and (max-width: 768px) {
+            display: block;
             width: 100%;
-            padding: 0 0 20px;
+            padding: 0;
+            float: left;
         }
     }
 
-    @media screen and (max-width: 768px) {
-        width: 100%;
-        padding: 0 0 20px;
-    }
 
     & > label {
         font-family: 'bignoodletitlingregular';
@@ -139,6 +145,12 @@
     width: 100%;
     color: white;
     display: table;
+
+    @media screen and (max-width: 768px) {
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
 }
 
 .quiz__number {

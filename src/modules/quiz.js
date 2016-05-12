@@ -68,6 +68,7 @@ Quiz.prototype.submitAnswers = function(){
         }
     }
 
+
     console.log(checkArray);
     console.log(value);
 
