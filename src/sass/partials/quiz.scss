@@ -39,6 +39,7 @@
     &--text {
         float: right;
         width: 100%;
+        color: #33373b;
     }
 
     &--textwrapper {
@@ -54,9 +55,11 @@
     &--class {
         font-family: 'bignoodletitlingoblique';
         font-size: 100px;
+        line-height: 80px;
         text-align: right;
         padding-right: 20px;
-        margin-top: 20px;
+        margin-top: 30px;
+        color: #33373b;
 
         visibility: hidden;
         opacity: 0;
@@ -66,7 +69,7 @@
     }
 
     &--description {
-        font-size: 18px;
+        font-size: 16px;
         font-family: "futura-pt",sans-serif;
         font-style: normal;
         font-weight: 400;

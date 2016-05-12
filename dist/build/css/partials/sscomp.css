@@ -44,7 +44,8 @@
 .main_field_label {
   font-family: "futura-pt",sans-serif;
   font-style: italic;
-  font-weight: 700; }
+  font-weight: 700;
+  font-size: 14px; }
 
 .ss__form .horizontal_container .field_block label.sublabel {
   position: absolute;
