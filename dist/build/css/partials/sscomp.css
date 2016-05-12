@@ -19,7 +19,7 @@
   background-color: transparent; }
 
 #form_last_name_block {
-  margin-top: 35px; }
+  margin-top: 40px; }
 
 .ss_layout > .ss_layout_column {
   padding: 15px; }
@@ -51,7 +51,8 @@
   top: -22px;
   font-family: "futura-pt",sans-serif;
   font-style: italic;
-  font-weight: 700; }
+  font-weight: 700;
+  font-size: 14px; }
 
 .name_field_block .main_field_label {
   display: none; }

@@ -2,21 +2,21 @@
    "char_0":{
       "class":"DEFENSE",
       "url":"https://daveymoores.github.io/dist/build/img/defense-characters.png",
-      "description":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam onummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Ut wisi enim ad minim veniam, quis nostrud exerci tation. Ut wisi enim ad minim veniam, quis nostrud exerci tation."
+      "description":"There’s no use capturing an objective if you can’t actually control it and as the thinker on the team, you understand this more than anyone. Whether you’re batting back attackers at long range or laying down traps for them to fall into, it’s up to you to protect the very foundation of the mission. Heroes in this role are Hanzo, Junkrat, Mei, Bastion, Torbjörn and Widowmaker.\r\nYou can also check out the Support role if you want to help your teammates but be a little closer to the attacking front line. You’re not locked into any hero you choose, so if your team needs to change its strategy mid-game, you can pick a new hero to play your part in mission success."
    },
    "char_1":{
       "class":"OFFENSE",
       "url":"https://daveymoores.github.io/dist/build/img/offense-characters.png",
-      "description":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam onummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Ut wisi enim ad minim veniam, quis nostrud exerci tation. Ut wisi enim ad minim veniam, quis nostrud exerci tation."
+      "description":"You are all business; ain’t nothin’ gonna stand in the way of you and mission success. Heroes in this role are quick and cause a lot of damage, making them incredibly important when it comes to achieving mission objectives. Offense-based heroes are Pharah, Reaper, Genji, Soldier 76, Tracer and McCree.\r\nIf you still want to cause a lot of damage but not think about executing objectives, you should check out the Tank role. You can easily change your heroes at any time, so if the tide turns against you mid-game, you can adjust who you play as to beat it back."
    },
    "char_2":{
       "class":"Tank",
-      "url":"https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150",
-      "description":"Lorem ipsum dolor sit amet"
+      "url":"https://daveymoores.github.io/dist/build/img/tank-characters.png",
+      "description":"There’s no messing about with you; you like to get stuck in and ask questions later.  As a tank, the enemy will scatter when they see you running toward them, allowing the rest of your team to carry on their duties unimpaired. You have big guns and enjoy using them. Heroes in this role are Reinhardt, Roadhog, D.Va, Winston and Zarya.\r\nLike the idea of an action-oriented hero but want to play it a bit more tactical? You could also check out the Offense role. No matter what happens in the field, you are never locked into any hero you choose as you’re able to easily switch between them, even mid-game."
    },
    "char_3":{
       "class":"Support",
-      "url":"https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150",
-      "description":"Lorem ipsum dolor sit amet"
+      "url":"https://daveymoores.github.io/dist/build/img/support-characters.png",
+      "description":"You are the personification of a team player and without you, it all falls apart. You’re on the frontline with the rest of the crew, but unlike everyone else, you’re focusing on the wellbeing of those around you as opposed to your own. Shielding and healing your teammates while having bullets rain down on you is no easy task but you’re one of the few with the guts to see it through. Heroes in this role are Mercy, Symmetra, Zenyatta and Lúcio.\r\nIf you ever find the stress of frontline battle too much, be sure to try the Defense role which also has a focus on team support, but allows you set up traps with deadly gadgets and pick foes off from afar. You can always change who you play as on the fly, so if your team suddenly needs to go all-out Offense, you can switch hero mid-game."
    }
 }
