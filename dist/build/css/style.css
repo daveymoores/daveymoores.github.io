@@ -23,6 +23,9 @@ body {
 body.desktop {
   background-color: #000; }
 
+body #wrapper {
+  background-color: black; }
+
 .clearfix:after {
   visibility: hidden;
   display: block;
@@ -368,11 +371,11 @@ input[type=radio]:not(old):checked + label > span > span {
   text-align: center;
   font-size: 11px;
   width: 80%;
-  margin: 10px auto 0;
+  margin: 10px auto 30px;
   display: block;
   color: white; }
 
 .footer img {
   width: 225px;
   display: block;
-  margin: 20px auto 10px; }
+  margin: 40px auto 20px; }
