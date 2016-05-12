@@ -266,7 +266,7 @@ input[type=radio]:not(old):checked + label > span > span {
   letter-spacing: 1px;
   cursor: pointer; }
 
-.form_submit.ss_btn {
+.form_submit.ss_btn, .form_submit.ss_btn:hover {
   font-size: 24px;
   padding: 10px 25px; }
 
@@ -306,7 +306,8 @@ input[type=radio]:not(old):checked + label > span > span {
     font-size: 16px; }
 
 .ss_box_content {
-  padding: 0; }
+  padding: 0;
+  margin-top: 25px; }
 
 .ss__form {
   background-color: transparent; }
