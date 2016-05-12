@@ -1,4 +1,4 @@
-.btn {
+.btn, .form_submit.ss_btn {
   border-radius: 3px;
   background: #0081d8;
   /* Old browsers */

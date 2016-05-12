@@ -243,7 +243,7 @@ input[type=radio]:not(old):checked + label > span > span {
   margin-top: 4px;
   margin-left: 4px; }
 
-.btn {
+.btn, .form_submit.ss_btn {
   border-radius: 3px;
   background: #0081d8;
   /* Old browsers */
