@@ -41,6 +41,8 @@ Quiz.prototype.collectAnswers = function(elem){
         var value = $(elem.target).attr('data-char');
         quizUtility.answeradd(value);
         $(elem.target).parent().addClass('active');
+
+        console.log(quizUtility.answers);
     }
 
     $(elem.target).parent().parent().find('.radio__container').each(function(){
@@ -53,11 +55,23 @@ Quiz.prototype.collectAnswers = function(elem){
 Quiz.prototype.submitAnswers = function(){
 
     var arr = Object.keys( quizUtility.answers ).map(function ( key ) { return quizUtility.answers[key]; });
+
     var max = Math.max.apply( null, arr );
     var value = arr.indexOf(max);
 
-    this.answerDisplay(value);
+    var checkArray = [];
+    for(var i=0; i < arr.length; i++) { //cycle through array checking for max value
+        if(arr[i] == max) {
+            checkArray.push(arr[i]);
+        } else {
+            checkArray.push(0); //give it zero value if not max
+        }
+    }
 
+    console.log(checkArray);
+    console.log(value);
+
+    this.answerDisplay(value);
 }
 
 //display result
