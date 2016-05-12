@@ -22,4 +22,5 @@
   cursor: pointer; }
 
 .form_submit.ss_btn {
-  font-size: 24px; }
+  font-size: 24px;
+  padding: 10px 25px; }
