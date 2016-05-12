@@ -266,6 +266,9 @@ input[type=radio]:not(old):checked + label > span > span {
   letter-spacing: 1px;
   cursor: pointer; }
 
+.form_submit.ss_btn {
+  font-size: 24px; }
+
 .hero {
   padding: 0 40px;
   height: 500px;
@@ -289,7 +292,7 @@ input[type=radio]:not(old):checked + label > span > span {
 
 .ss__comp {
   background: white url(../img/comp_prizing-bg.jpg) top left no-repeat;
-  background-size: 100%;
+  background-size: cover;
   border-radius: 8px;
   padding: 15px; }
   .ss__comp img {
