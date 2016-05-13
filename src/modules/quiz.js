@@ -49,7 +49,7 @@ Quiz.prototype.collectAnswers = function(elem){
             summed += quizUtility.answers[key];
         }
 
-        if(summed == 10) {  //if all answered make button active
+        if(summed == 1) {  //if all answered make button active
             this.$submit.removeClass('disabled').prop('disabled', false);
         }
 

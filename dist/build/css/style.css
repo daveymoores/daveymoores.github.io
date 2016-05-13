@@ -111,6 +111,9 @@ body #wrapper {
     float: right;
     text-align: right;
     padding: 20px; }
+    @media screen and (max-width: 465px) {
+      .quiz__answerdisplay--description {
+        width: auto; } }
   .quiz__answerdisplay .quiz__answerdisplay--img.active, .quiz__answerdisplay .quiz__answerdisplay--class.active, .quiz__answerdisplay .quiz__answerdisplay--textwrapper.active {
     visibility: visible;
     opacity: 1; }

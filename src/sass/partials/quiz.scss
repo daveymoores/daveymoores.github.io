@@ -76,6 +76,10 @@
         float: right;
         text-align: right;
         padding: 20px;
+
+        @media screen and (max-width: 465px) {
+            width: auto;
+        }
     }
 
 
