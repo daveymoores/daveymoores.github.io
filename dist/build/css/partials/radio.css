@@ -40,9 +40,6 @@ input[type=radio]:not(old) + label > span > span {
   display: table-cell;
   vertical-align: top; }
 
-input[type=radio]:not(old):checked + label > span {
-  background-color: black; }
-
 input[type=radio]:not(old):checked + label > span > span > span {
   display: block;
   width: 10px;

@@ -187,15 +187,17 @@ body #wrapper {
 .quiz__submittext {
   padding: 20px 40px; }
   .quiz__submittext p {
-    float: left;
+    float: none;
+    width: 100%;
     margin: 0px;
-    font-family: "futura-pt",sans-serif;
+    font-family: 'bignoodletitlingoblique';
     font-style: italic;
     font-weight: 400;
-    font-size: 20px;
-    width: 55%;
+    font-size: 24px;
     padding-right: 60px;
-    color: #101012; }
+    color: #33373b;
+    text-align: center;
+    margin-bottom: 20px; }
     @media screen and (max-width: 768px) {
       .quiz__submittext p {
         float: none;
@@ -204,8 +206,9 @@ body #wrapper {
         width: 100%;
         text-align: center; } }
   .quiz__submittext button {
-    float: left;
-    margin-top: 10px; }
+    margin: auto;
+    display: block;
+    margin-top: 20px; }
     @media screen and (max-width: 768px) {
       .quiz__submittext button {
         float: none;
@@ -268,9 +271,6 @@ input[type=radio]:not(old) + label > span > span {
   border-radius: auto !important;
   display: table-cell;
   vertical-align: top; }
-
-input[type=radio]:not(old):checked + label > span {
-  background-color: black; }
 
 input[type=radio]:not(old):checked + label > span > span > span {
   display: block;
@@ -430,3 +430,10 @@ input[type=radio]:not(old):checked + label > span > span > span {
   width: 225px;
   display: block;
   margin: 40px auto 20px; }
+
+.tiebreak__wrapper {
+  display: none; }
+  .tiebreak__wrapper label {
+    color: #33373b; }
+    .tiebreak__wrapper label > span {
+      color: #33373b; }

@@ -79,11 +79,20 @@ Quiz.prototype.submitAnswers = function(){
         }
     }
 
+    var answerArray = [];
+    for(var i=0; i < checkArray.length; i++) { //cycle through array looking for values
+        if(checkArray[i] !== 0) {
+            answerArray.push(i); // add the snwer index values
+        }
+    }
 
-    console.log(checkArray);
-    console.log(value);
+    console.log(answerArray);
 
-    this.answerDisplay(value);
+    if(answerArray.length >= 2) {
+        $('#tiebreak').show();
+    } else {
+        this.answerDisplay(value);
+    }
 }
 
 //display result

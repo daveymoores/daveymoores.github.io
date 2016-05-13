@@ -276,7 +276,34 @@
 
         <div class="quiz__answerdisplay" id="display">
             <div class="quiz__submittext" id="submittext">
-                <p>Submit your answer to find your class and be ready for ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
+                <!-- <p>Submit your answer to find your class and be ready for ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p> -->
+
+                <div class="tiebreak__wrapper" id="tiebreak">
+
+                    <p>It's too close! Tie-break question...</p>
+                    <div class="quiz__item">
+
+                        <label for="q_11">Your teammate has been wounded, what do you do?</label>
+
+                        <div data-q="11">
+                            <div class="radio__container">
+                                <input type="radio" name="q_11_a" id="q_11_a" data-char="a" value="q_11_a"><label for="q_11_a"><span class="radio__wrapper"><span><span></span></span></span><span class="copy">Hide and take a sneaky position where I can attack from behind</span></label>
+                            </div>
+                            <div class="radio__container">
+                                <input type="radio" name="q_11_b" id="q_11_b" data-char="b" value="q_11_b"><label for="q_11_b"><span class="radio__wrapper"><span><span></span></span></span><span class="copy">Figure out a way I can sabotage whatever they’re doing</span></label>
+                            </div>
+                            <div class="radio__container">
+                                <input type="radio" name="q_11_c" id="q_11_c" data-char="c" value="q_11_c"><label for="q_11_c"><span class="radio__wrapper"><span><span></span></span></span><span class="copy">Enjoy the fact there’s a lot of enemies for me to fight</span></label>
+                            </div>
+                            <div class="radio__container">
+                                <input type="radio" name="q_11_d" id="q_11_d" data-char="d" value="q_11_d"><label for="q_11_d"><span class="radio__wrapper"><span><span></span></span></span><span class="copy">Look for comrades who have suffered the same fate and may need help</span></label>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
                 <button id="submit" class="btn disabled" disabled>Submit your answers</button>
             </div>
             <img class="quiz__answerdisplay--img animate" src="" alt="" />

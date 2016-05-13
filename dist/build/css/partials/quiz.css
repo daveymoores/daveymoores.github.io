@@ -140,15 +140,17 @@
 .quiz__submittext {
   padding: 20px 40px; }
   .quiz__submittext p {
-    float: left;
+    float: none;
+    width: 100%;
     margin: 0px;
-    font-family: "futura-pt",sans-serif;
+    font-family: 'bignoodletitlingoblique';
     font-style: italic;
     font-weight: 400;
-    font-size: 20px;
-    width: 55%;
+    font-size: 24px;
     padding-right: 60px;
-    color: #101012; }
+    color: #33373b;
+    text-align: center;
+    margin-bottom: 20px; }
     @media screen and (max-width: 768px) {
       .quiz__submittext p {
         float: none;
@@ -157,8 +159,9 @@
         width: 100%;
         text-align: center; } }
   .quiz__submittext button {
-    float: left;
-    margin-top: 10px; }
+    margin: auto;
+    display: block;
+    margin-top: 20px; }
     @media screen and (max-width: 768px) {
       .quiz__submittext button {
         float: none;
