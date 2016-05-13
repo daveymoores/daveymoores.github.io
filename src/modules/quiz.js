@@ -89,7 +89,12 @@ Quiz.prototype.submitAnswers = function(){
     console.log(answerArray);
 
     if(answerArray.length >= 2) {
-        $('#tiebreak').show();
+        $('#tiebreak').show().animate({
+            opacity: 1
+        }, 300);
+
+        this.$submit.addClass('disabled').prop('disabled', true);
+
     } else {
         this.answerDisplay(value);
     }

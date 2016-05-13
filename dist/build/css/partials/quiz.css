@@ -34,7 +34,8 @@
   .quiz__answerdisplay--text {
     float: right;
     width: 100%;
-    color: #33373b; }
+    color: #33373b;
+    display: none; }
   .quiz__answerdisplay--textwrapper {
     background-color: #a4a4a4;
     visibility: hidden;
@@ -161,7 +162,7 @@
   .quiz__submittext button {
     margin: auto;
     display: block;
-    margin-top: 20px; }
+    margin-top: 10px; }
     @media screen and (max-width: 768px) {
       .quiz__submittext button {
         float: none;

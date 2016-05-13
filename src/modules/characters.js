@@ -45,6 +45,7 @@ displayCharacters.prototype.switch = function(value){
 
          $qs.hide();
          $('#display').css('height', 'auto');
+         $('#display').find('.quiz__answerdisplay--text').show();
 
          $('#display').find('.animate').each(function(){
              var $this = $(this);

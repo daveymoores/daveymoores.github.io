@@ -81,7 +81,8 @@ body #wrapper {
   .quiz__answerdisplay--text {
     float: right;
     width: 100%;
-    color: #33373b; }
+    color: #33373b;
+    display: none; }
   .quiz__answerdisplay--textwrapper {
     background-color: #a4a4a4;
     visibility: hidden;
@@ -208,7 +209,7 @@ body #wrapper {
   .quiz__submittext button {
     margin: auto;
     display: block;
-    margin-top: 20px; }
+    margin-top: 10px; }
     @media screen and (max-width: 768px) {
       .quiz__submittext button {
         float: none;
@@ -432,7 +433,8 @@ input[type=radio]:not(old):checked + label > span > span > span {
   margin: 40px auto 20px; }
 
 .tiebreak__wrapper {
-  display: none; }
+  display: none;
+  opacity: 0; }
   .tiebreak__wrapper label {
     color: #33373b; }
     .tiebreak__wrapper label > span {
