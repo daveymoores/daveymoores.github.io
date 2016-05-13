@@ -39,10 +39,8 @@ displayCharacters.prototype.switch = function(value){
 
         $('#classimage').load(function() {
 
-            alert('>>>>>');
-
-            // $class.text(json.class);
-            // $desc.text(json.description);
+            $class.text(json.class);
+            $desc.text(json.description);
 
         }).attr('src', json.url);
 
