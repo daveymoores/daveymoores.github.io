@@ -161,8 +161,7 @@
         text-align: center; } }
   .quiz__submittext button {
     margin: auto;
-    display: block;
-    margin-top: 10px; }
+    display: block; }
     @media screen and (max-width: 768px) {
       .quiz__submittext button {
         float: none;
