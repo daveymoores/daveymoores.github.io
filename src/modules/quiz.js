@@ -88,11 +88,25 @@ Quiz.prototype.submitAnswers = function(){
 
     console.log(answerArray);
 
-    if(answerArray.length >= 2) {
+    if(answerArray.length >= 2) {   //if there are two or more values the same, show tie-break...
+        //remove answers from tie-break
+        $('#tiebreak').find('.radio__container').each(function(){
+            for(var k=0; k<answerArray.length; k++) {
+                if($(this).attr('data-tie') == answerArray[k]) {
+                    $(this).addClass('keep');
+                }
+            }
+        });
+
+        $('#tiebreak').find('.radio__container').each(function(){
+            if($(this).hasClass('keep') !== true) {
+                $(this).remove();
+            }
+        });
+
         $('#tiebreak').show().animate({
             opacity: 1
         }, 300);
-
         this.$submit.addClass('disabled').prop('disabled', true);
 
     } else {
