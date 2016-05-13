@@ -37,10 +37,14 @@ displayCharacters.prototype.switch = function(value){
             break;
         }
 
-        $img.attr('src', json.url);
-        $class.text(json.class);
-        $desc.text(json.description);
+        $('#classimage').load(function() {
 
+            $class.text(json.class);
+            $desc.text(json.description);
+
+        }).attr('src', json.url);
+
+        //$img.attr('src', json.url);
      }).done(function() {
 
          $qs.hide();

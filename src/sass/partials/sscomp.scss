@@ -84,6 +84,6 @@
 
 .horizontal_container .field_block input, .horizontal_container .field_block textarea {
     @media screen and (max-width: 767px) {
-        width: 100%;
+        width: 100%!important;
     }
 }

@@ -419,7 +419,7 @@ input[type=radio]:not(old):checked + label > span > span > span {
 
 @media screen and (max-width: 767px) {
   .horizontal_container .field_block input, .horizontal_container .field_block textarea {
-    width: 100%; } }
+    width: 100% !important; } }
 
 .footer__text {
   font-family: "futura-pt",sans-serif;

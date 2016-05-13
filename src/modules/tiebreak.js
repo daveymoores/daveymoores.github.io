@@ -8,8 +8,6 @@ function Tiebreak(node){
     this.$submit = $('#submit');
     this.$node.find("input[type='radio']").change($.proxy(this.collectAnswers, this));
 
-    this.$submit.on('click', $.proxy(this.submitAnswers, this));
-
 }
 
 Tiebreak.prototype.collectAnswers = function(elem){
