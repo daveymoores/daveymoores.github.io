@@ -1,4 +1,4 @@
-.btn, .form_submit.ss_btn, .btn:hover, .form_submit.ss_btn:hover {
+.btn, .form_submit.ss_btn, .btn:hover, .form_submit.ss_btn:hover, .btn:active, .form_submit.ss_btn:active {
     border-radius: 3px;
 
     background: rgb(0,129,216); /* Old browsers */
@@ -19,7 +19,14 @@
     cursor: pointer;
 }
 
-.form_submit.ss_btn, .form_submit.ss_btn:hover { 
+.form_submit.ss_btn, .form_submit.ss_btn:hover {
     font-size: 24px;
     padding: 10px 25px;
+    margin: auto;
+    display: block;
+    width: 64%;
+}
+
+.btn.disabled {
+    opacity: 0.6;
 }

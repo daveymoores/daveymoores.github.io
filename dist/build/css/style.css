@@ -128,7 +128,7 @@ body #wrapper {
       width: 100%;
       padding: 0;
       float: left;
-      margin-top: 30px; } }
+      margin-bottom: 30px; } }
   .quiz__item:last-child {
     padding-left: 1.5%;
     padding-right: 0; }
@@ -193,9 +193,21 @@ body #wrapper {
     width: 55%;
     padding-right: 60px;
     color: #101012; }
+    @media screen and (max-width: 768px) {
+      .quiz__submittext p {
+        float: none;
+        display: block;
+        margin: 10px auto 25px;
+        width: 100%;
+        text-align: center; } }
   .quiz__submittext button {
     float: left;
     margin-top: 10px; }
+    @media screen and (max-width: 768px) {
+      .quiz__submittext button {
+        float: none;
+        display: block;
+        margin: 10px auto; } }
 
 .quiz__radios {
   display: table;
@@ -266,7 +278,7 @@ input[type=radio]:not(old):checked + label > span > span {
   margin-top: 4px;
   margin-left: 4px; }
 
-.btn, .form_submit.ss_btn, .btn:hover, .form_submit.ss_btn:hover {
+.btn, .form_submit.ss_btn, .btn:hover, .form_submit.ss_btn:hover, .btn:active, .form_submit.ss_btn:active {
   border-radius: 3px;
   background: #0081d8;
   /* Old browsers */
@@ -291,7 +303,13 @@ input[type=radio]:not(old):checked + label > span > span {
 
 .form_submit.ss_btn, .form_submit.ss_btn:hover {
   font-size: 24px;
-  padding: 10px 25px; }
+  padding: 10px 25px;
+  margin: auto;
+  display: block;
+  width: 64%; }
+
+.btn.disabled {
+  opacity: 0.6; }
 
 .hero {
   padding: 0 40px;

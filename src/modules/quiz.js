@@ -43,6 +43,17 @@ Quiz.prototype.collectAnswers = function(elem){
         $(elem.target).parent().addClass('active');
 
         console.log(quizUtility.answers);
+
+        var summed = 0; //keep track of number of answered questions
+        for (var key in quizUtility.answers) {
+            summed += quizUtility.answers[key];
+        }
+
+        if(summed == 10) {  //if all answered make button active
+            this.$submit.removeClass('disabled').prop('disabled', false);
+        }
+
+        console.log(summed);
     }
 
     $(elem.target).parent().parent().find('.radio__container').each(function(){
