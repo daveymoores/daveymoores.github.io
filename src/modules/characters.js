@@ -44,7 +44,7 @@ displayCharacters.prototype.switch = function(value){
      }).done(function() {
 
          $qs.hide();
-         $('#display').css('height', '415');
+         $('#display').css('height', 'auto');
 
          $('#display').find('.animate').each(function(){
              var $this = $(this);
