@@ -1,6 +1,10 @@
 .quiz {
     padding: 20px 40px;
 
+    &.tiebreak__wrapper {
+        padding: 0;
+    }
+
     @media screen and (max-width: 768px) {
         padding: 0 15px 15px;
     }
