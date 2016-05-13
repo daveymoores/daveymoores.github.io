@@ -63,7 +63,7 @@ Quiz.prototype.collectAnswers = function(elem){
     });
 }
 
-Quiz.prototype.submitAnswers = function(){
+Quiz.prototype.submitAnswers = function(btn){
 
     var arr = Object.keys( quizUtility.answers ).map(function ( key ) { return quizUtility.answers[key]; });
 
@@ -107,7 +107,7 @@ Quiz.prototype.submitAnswers = function(){
         $('#tiebreak').show().animate({
             opacity: 1
         }, 300);
-        this.$submit.addClass('disabled').prop('disabled', true);
+        this.$submit.addClass('disabled').prop('disabled', true).attr('data-tiebreak', 'true');
 
     } else {
         this.answerDisplay(value);

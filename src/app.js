@@ -3,7 +3,8 @@ var $ = require('jquery');
 var widgets;
 
 widgets = {
-    'quiz' : require('./modules/quiz.js')
+    'quiz' : require('./modules/quiz.js'),
+    'tiebreak' : require('./modules/tiebreak.js')
 }
 
 $(document).ready(function(){

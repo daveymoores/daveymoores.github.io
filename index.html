@@ -276,9 +276,9 @@
 
         <div class="quiz__answerdisplay" id="display">
             <div class="quiz__submittext" id="submittext">
-                <!-- <p>Submit your answer to find your class and be ready for ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p> -->
 
-                <div class="tiebreak__wrapper" id="tiebreak">
+
+                <div class="tiebreak__wrapper quiz" id="tiebreak" data-widget="tiebreak">
 
                     <p>It's too close! Tie-break question...</p>
                     <div class="quiz__item">
@@ -304,7 +304,7 @@
                 </div>
 
 
-                <button id="submit" class="btn disabled" disabled>Submit your answers</button>
+                <button id="submit" class="btn disabled" data-tiebreak="false" disabled>Submit your answers</button>
             </div>
             <img class="quiz__answerdisplay--img animate" src="" alt="" />
 
