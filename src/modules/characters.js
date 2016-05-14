@@ -37,14 +37,16 @@ displayCharacters.prototype.switch = function(value){
             break;
         }
 
-        $('#classimage').load(function() {
+        // $('#classimage').load(function() {
+        //
+        //     $class.text(json.class);
+        //     $desc.text(json.description);
+        //
+        // }).attr('src', json.url);
 
-            $class.text(json.class);
-            $desc.text(json.description);
-
-        }).attr('src', json.url);
-
-        //$img.attr('src', json.url);
+        $img.attr('src', json.url);
+        $class.text(json.class);
+        $desc.text(json.description);
      }).done(function() {
 
          $qs.hide();
