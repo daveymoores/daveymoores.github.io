@@ -67,3 +67,8 @@
 @media screen and (max-width: 767px) {
   .horizontal_container .field_block input, .horizontal_container .field_block textarea {
     width: 100% !important; } }
+
+.ss_form_message p {
+  color: #43AF74;
+  text-align: center;
+  width: 100%; }

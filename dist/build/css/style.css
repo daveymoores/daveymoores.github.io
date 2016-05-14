@@ -421,6 +421,11 @@ input[type=radio]:not(old):checked + label > span > span > span {
   .horizontal_container .field_block input, .horizontal_container .field_block textarea {
     width: 100% !important; } }
 
+.ss_form_message p {
+  color: #43AF74;
+  text-align: center;
+  width: 100%; }
+
 .footer__text {
   font-family: "futura-pt",sans-serif;
   font-style: normal;
