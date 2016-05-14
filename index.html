@@ -316,12 +316,46 @@
                     <div class="quiz__answerdisplay--description"></div>
                     <div class="clearfix"></div>
                 </div>
+
+                <div class="share">
+
+                </div>
             </div>
 
         </div>
 
 
     </div>
+
+    <div id="preload-01"></div>
+    <div id="preload-02"></div>
+    <div id="preload-03"></div>
+    <div id="preload-04"></div>
+
+    <script>
+        function preloader() {
+        	if (document.getElementById) {
+        		document.getElementById("preload-01").style.background = "url(https://daveymoores.github.io/dist/build/img/tank-characters.png) no-repeat -9999px -9999px";
+        		document.getElementById("preload-02").style.background = "url(https://daveymoores.github.io/dist/build/img/support-characters.png) no-repeat -9999px -9999px";
+        		document.getElementById("preload-03").style.background = "url(https://daveymoores.github.io/dist/build/img/defense-characters.png) no-repeat -9999px -9999px";
+                document.getElementById("preload-04").style.background = "url(https://daveymoores.github.io/dist/build/img/offense-characters.png) no-repeat -9999px -9999px";
+        	}
+        }
+        function addLoadEvent(func) {
+        	var oldonload = window.onload;
+        	if (typeof window.onload != 'function') {
+        		window.onload = func;
+        	} else {
+        		window.onload = function() {
+        			if (oldonload) {
+        				oldonload();
+        			}
+        			func();
+        		}
+        	}
+        }
+        addLoadEvent(preloader);
+    </script>
 
 
 	<script src="dist/build/build.min.js"></script>
