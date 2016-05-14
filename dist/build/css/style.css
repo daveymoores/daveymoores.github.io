@@ -426,6 +426,16 @@ input[type=radio]:not(old):checked + label > span > span > span {
   text-align: center;
   width: 100%; }
 
+@media screen and (max-width: 767px) {
+  #wrapper {
+    padding: 1px 8px 30px; } }
+
+#form_custom_field_2_block {
+  position: absolute;
+  bottom: -40px;
+  width: 100%;
+  text-align: center; }
+
 .footer__text {
   font-family: "futura-pt",sans-serif;
   font-style: normal;

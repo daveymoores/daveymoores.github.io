@@ -93,3 +93,16 @@
     text-align: center;
     width: 100%;
 }
+
+#wrapper {
+    @media screen and (max-width: 767px) {
+        padding: 1px 8px 30px;
+    }
+}
+
+#form_custom_field_2_block {
+    position: absolute;
+    bottom: -40px;
+    width: 100%;
+    text-align: center;
+}
