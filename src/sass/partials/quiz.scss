@@ -224,11 +224,14 @@
     width: 100%;
 }
 
+#share {
+    display: none;
+}
+
 #content_share {
     display: table;
     text-align: right;
     float: right;
-    display: none;
 
     &.cf:before,
     &.cf:after {

@@ -222,11 +222,13 @@ body #wrapper {
   table-layout: fixed;
   width: 100%; }
 
+#share {
+  display: none; }
+
 #content_share {
   display: table;
   text-align: right;
-  float: right;
-  display: none; }
+  float: right; }
   #content_share.cf:before, #content_share.cf:after {
     content: " ";
     /* 1 */
