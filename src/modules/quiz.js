@@ -64,12 +64,6 @@ Quiz.prototype.collectAnswers = function(elem){
         }
     }
 
-    //disable other radios
-    // $(elem.target).parent().parent().find('.radio__container').each(function(){
-    //     if($(this).hasClass('active') != true) {
-    //         $(this).addClass('disable').children().attr('disabled', 'disabled');
-    //     }
-    // });
 }
 
 Quiz.prototype.submitAnswers = function(btn){
