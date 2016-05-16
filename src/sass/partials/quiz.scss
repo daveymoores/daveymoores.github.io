@@ -232,6 +232,7 @@
     display: table;
     text-align: right;
     float: right;
+    padding: 15px 20px;
 
     &.cf:before,
     &.cf:after {
@@ -245,9 +246,18 @@
 
 }
 
+.ss_share_prompt {
+    font-family: 'bignoodletitlingoblique';
+    color: #33373b;
+}
+
 .ss_share_content div.ss_share_prompt {
     display: table-cell;
     vertical-align: middle;
+}
+
+.ss_share_content li {
+    margin-left: 8px;
 }
 
 .ss_share_content ul {

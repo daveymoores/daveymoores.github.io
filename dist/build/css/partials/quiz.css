@@ -181,7 +181,8 @@
 #content_share {
   display: table;
   text-align: right;
-  float: right; }
+  float: right;
+  padding: 15px 20px; }
   #content_share.cf:before, #content_share.cf:after {
     content: " ";
     /* 1 */
@@ -190,9 +191,16 @@
   #content_share.cf:after {
     clear: both; }
 
+.ss_share_prompt {
+  font-family: 'bignoodletitlingoblique';
+  color: #33373b; }
+
 .ss_share_content div.ss_share_prompt {
   display: table-cell;
   vertical-align: middle; }
+
+.ss_share_content li {
+  margin-left: 8px; }
 
 .ss_share_content ul {
   display: table-cell; }
