@@ -80,6 +80,10 @@ body #wrapper {
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out; }
+    @media screen and (max-width: 550px) {
+      .quiz__answerdisplay--img {
+        position: relative;
+        border-bottom: 10px solid #a4a4a4; } }
   .quiz__answerdisplay--text {
     float: right;
     width: 100%;
