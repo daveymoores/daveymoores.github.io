@@ -222,6 +222,26 @@ body #wrapper {
   table-layout: fixed;
   width: 100%; }
 
+#content_share {
+  display: table;
+  text-align: right;
+  float: right;
+  display: none; }
+  #content_share.cf:before, #content_share.cf:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */ }
+  #content_share.cf:after {
+    clear: both; }
+
+.ss_share_content div.ss_share_prompt {
+  display: table-cell;
+  vertical-align: middle; }
+
+.ss_share_content ul {
+  display: table-cell; }
+
 .pagewrapper {
   width: 960px;
   margin: auto;

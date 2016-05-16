@@ -58,7 +58,7 @@ displayCharacters.prototype.switch = function(value){
              }
          });
 
-         $('#share').appendTo('.share');
+         $('#share').appendTo('#share_destination').end().show();
 
       });
 
