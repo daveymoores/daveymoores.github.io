@@ -77,10 +77,14 @@
         font-family: "futura-pt",sans-serif;
         font-style: normal;
         font-weight: 400;
-        width: 400px;
+        width: 40%;
         float: right;
         text-align: right;
         padding: 20px;
+
+        @media screen and (max-width: 650px) {
+            width: 50%;
+        }
 
         @media screen and (max-width: 465px) {
             width: auto;
@@ -97,7 +101,19 @@
 
     .quiz__answerdisplay--img {
         &.active {
-            left: -50px;
+            left: -100px;
+
+            @media screen and (max-width: 840px) {
+                left: -120px;
+            }
+
+            @media screen and (max-width: 780px) {
+                left: -200px;
+            }
+
+            @media screen and (max-width: 650px) {
+                left: -300px;
+            }
         }
     }
 }
