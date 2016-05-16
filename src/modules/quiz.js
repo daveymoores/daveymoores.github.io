@@ -59,7 +59,7 @@ Quiz.prototype.collectAnswers = function(elem){
             summed += quizUtility.answers[key];
         }
 
-        if(summed == 1) {  //if all answered make button active
+        if(summed == 10) {  //if all answered make button active
             this.$submit.removeClass('disabled').prop('disabled', false);
         }
     }
@@ -67,6 +67,8 @@ Quiz.prototype.collectAnswers = function(elem){
 }
 
 Quiz.prototype.submitAnswers = function(btn){
+
+    $('#questions').find('.radio__container').addClass('disable').children().attr('disabled', 'disabled');
 
     var arr = Object.keys( quizUtility.answers ).map(function ( key ) { return quizUtility.answers[key]; });
 

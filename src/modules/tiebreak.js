@@ -12,14 +12,6 @@ function Tiebreak(node){
 
 Tiebreak.prototype.collectAnswers = function(elem){
 
-    // var $parentDiv = $(elem.target).parents('.quiz__item');
-    //
-    // console.log($parentDiv);
-
-    // if($parentDiv.find('.active').length) {
-    //     $parentDiv.find('.active').removeClass('active');
-    // }
-
     if(elem.target.checked) {
         var value = $(elem.target).attr('data-char');
         this.$submit.removeClass('disabled').prop('disabled', false);
