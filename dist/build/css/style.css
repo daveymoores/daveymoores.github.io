@@ -105,6 +105,26 @@ body #wrapper {
     -webkit-transition: opacity 0.3s ease-in-out;
     -moz-transition: opacity 0.3s ease-in-out;
     transition: opacity 0.3s ease-in-out; }
+    .quiz__answerdisplay--class::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 40px;
+      width: 40px;
+      display: block; }
+    .quiz__answerdisplay--class.tank::before {
+      background: transparent url(../img/icons/tank.png) left top no-repeat;
+      background-size: contain; }
+    .quiz__answerdisplay--class.offense::before {
+      background: transparent url(../img/icons/offense.png) left top no-repeat;
+      background-size: contain; }
+    .quiz__answerdisplay--class.defense::before {
+      background: transparent url(../img/icons/defense.png) left top no-repeat;
+      background-size: contain; }
+    .quiz__answerdisplay--class.support::before {
+      background: transparent url(../img/icons/support.png) left top no-repeat;
+      background-size: contain; }
   .quiz__answerdisplay--description {
     font-size: 16px;
     font-family: "futura-pt",sans-serif;

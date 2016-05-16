@@ -77,6 +77,44 @@
         -webkit-transition: opacity 0.3s ease-in-out;
         -moz-transition: opacity 0.3s ease-in-out;
         transition: opacity 0.3s ease-in-out;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 40px;
+            width: 40px;
+            display: block;
+        }
+
+        &.tank {
+            &::before {
+                background: transparent url(../img/icons/tank.png) left top no-repeat;
+                background-size: contain;
+            }
+        }
+
+        &.offense {
+            &::before {
+                background: transparent url(../img/icons/offense.png) left top no-repeat;
+                background-size: contain;
+            }
+        }
+
+        &.defense {
+            &::before {
+                background: transparent url(../img/icons/defense.png) left top no-repeat;
+                background-size: contain;
+            }
+        }
+
+        &.support {
+            &::before {
+                background: transparent url(../img/icons/support.png) left top no-repeat;
+                background-size: contain;
+            }
+        }
     }
 
     &--description {
