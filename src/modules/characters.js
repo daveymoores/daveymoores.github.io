@@ -58,6 +58,8 @@ displayCharacters.prototype.switch = function(value){
              }
          });
 
+         $('#share').appendTo('.share');
+
       });
 
 
