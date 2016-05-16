@@ -12,16 +12,26 @@ function Tiebreak(node){
 
 Tiebreak.prototype.collectAnswers = function(elem){
 
-    var $parentDiv = $(elem.target).parents('.quiz__item');//.closest('div:has(*[data-q])');
+    // var $parentDiv = $(elem.target).parents('.quiz__item');
+    //
+    // console.log($parentDiv);
 
-    if($parentDiv.find('.active').length) {
-        $parentDiv.find('.active').removeClass('active');
-    }
+    // if($parentDiv.find('.active').length) {
+    //     $parentDiv.find('.active').removeClass('active');
+    // }
 
     if(elem.target.checked) {
         var value = $(elem.target).attr('data-char');
         this.$submit.removeClass('disabled').prop('disabled', false);
     }
+
+
+    //disable other radios
+    $(elem.target).parent().parent().find('.radio__container').each(function(){
+        if($(this).hasClass('active') !== true) {
+            $(this).addClass('disable').children().attr('disabled', 'disabled');
+        }
+    });
 
 }
 
