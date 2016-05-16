@@ -36,8 +36,18 @@ Quiz.prototype.quizLoad = function(){
 //form array
 Quiz.prototype.collectAnswers = function(elem){
 
+    var $parentDiv = $(elem.target).parents('.quiz__item');//.closest('div:has(*[data-q])');
+
+    if($parentDiv.find('.active').length) {
+        var oldvalue = $parentDiv.find('.active').children().attr('data-char');
+        quizUtility.answerremove(oldvalue);
+
+        $parentDiv.find('.active').removeClass('active');
+    }
+
     //when checked, add to array
     if(elem.target.checked) {
+
         var value = $(elem.target).attr('data-char');
         quizUtility.answeradd(value);
         $(elem.target).parent().addClass('active');
@@ -52,15 +62,14 @@ Quiz.prototype.collectAnswers = function(elem){
         if(summed == 10) {  //if all answered make button active
             this.$submit.removeClass('disabled').prop('disabled', false);
         }
-
-        console.log(summed);
     }
 
-    $(elem.target).parent().parent().find('.radio__container').each(function(){
-        if($(this).hasClass('active') != true) {
-            $(this).addClass('disable').children().attr('disabled', 'disabled');
-        }
-    });
+    //disable other radios
+    // $(elem.target).parent().parent().find('.radio__container').each(function(){
+    //     if($(this).hasClass('active') != true) {
+    //         $(this).addClass('disable').children().attr('disabled', 'disabled');
+    //     }
+    // });
 }
 
 Quiz.prototype.submitAnswers = function(btn){
@@ -127,6 +136,10 @@ var quizUtility = {
 
     answeradd : function(value){
         quizUtility.answers[value]++;
+    },
+
+    answerremove : function(value){
+        quizUtility.answers[value]--;
     }
 
 }
