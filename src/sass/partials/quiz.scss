@@ -37,13 +37,13 @@
         -webkit-transition: all 0.3s ease-in-out;
         -moz-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
-
-        @media screen and (max-width: 550px) {
-            position: relative;
-            border-bottom: 10px solid #a4a4a4;
-            background-color: black;
-            left: -100px;
-        }
+        //
+        // @media screen and (max-width: 550px) {
+        //     position: relative;
+        //     border-bottom: 10px solid #a4a4a4;
+        //     background-color: black;
+        //     left: -100px;
+        // }
     }
 
     &--text {
@@ -123,6 +123,10 @@
             }
 
             @media screen and (max-width: 550px) {
+                left: -100px;
+                position: relative;
+                border-bottom: 10px solid #a4a4a4;
+                background-color: black;
                 left: -100px;
             }
         }
