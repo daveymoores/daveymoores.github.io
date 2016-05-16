@@ -38,7 +38,7 @@ displayCharacters.prototype.switch = function(value){
         }
 
         $img.attr('src', json.url);
-        $class.text(json.class);
+        $class.text(json.class).addClass(json.class);
         $desc.text(json.description);
      }).done(function() {
 

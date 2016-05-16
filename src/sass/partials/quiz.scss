@@ -123,11 +123,11 @@
             }
 
             @media screen and (max-width: 550px) {
-                left: -100px;
                 position: relative;
                 border-bottom: 10px solid #a4a4a4;
                 background-color: black;
-                left: -100px;
+                left: 0;
+                width: 100%;
             }
         }
     }
