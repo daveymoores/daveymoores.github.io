@@ -96,7 +96,7 @@
 
 #wrapper {
     @media screen and (max-width: 767px) {
-        padding: 1px 8px 30px;
+        padding: 8px 8px 30px;
     }
 }
 
@@ -105,4 +105,9 @@
     bottom: -40px;
     width: 100%;
     text-align: center;
+}
+
+.ss_layout {
+    margin-left: 0px;
+    margin-right: 0px;
 }

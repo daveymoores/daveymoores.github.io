@@ -463,13 +463,17 @@ input[type=radio]:not(old):checked + label > span > span > span {
 
 @media screen and (max-width: 767px) {
   #wrapper {
-    padding: 1px 8px 30px; } }
+    padding: 8px 8px 30px; } }
 
 #form_custom_field_2_block {
   position: absolute;
   bottom: -40px;
   width: 100%;
   text-align: center; }
+
+.ss_layout {
+  margin-left: 0px;
+  margin-right: 0px; }
 
 .footer__text {
   font-family: "futura-pt",sans-serif;
