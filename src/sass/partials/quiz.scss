@@ -233,6 +233,7 @@
     text-align: right;
     float: right;
     padding: 15px 20px;
+    margin-top: 0px;
 
     &.cf:before,
     &.cf:after {
@@ -253,11 +254,17 @@
 
 .ss_share_content div.ss_share_prompt {
     display: table-cell;
-    vertical-align: middle;
+    vertical-align: bottom;
+    font-size: 20px;
+    line-height: 16px;
 }
 
 .ss_share_content li {
     margin-left: 8px;
+
+    &:first-child {
+        margin-left: 16px;
+    }
 }
 
 .ss_share_content ul {
